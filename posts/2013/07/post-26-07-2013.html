@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" manifest="/clebermatheus.appcache">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Cleber Matheus Website</title>
+		<link rel="stylesheet" href="/index.css"/>
+		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
+		<meta name="generator" content="Notepad++ v6.4.2"/>
+		<meta name="author" content="Cleber Matheus"/>
+		<link rel="shortcut icon" href="/favicon.ico"/>
+		<meta name="description" content="Website official of Cleber Matheus!"/>
+		<meta name="reply-to" content="clebermatheus@outlook.com"/>
+		<meta name="keywords" content="home, Cleber Matheus Website, home page, Página Inicial, Início"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="msapplication-TileColor" content="blue"/>
+		<meta name="msapplication-TileImage" content="/favicon.ico"/>
+		<meta name="msvalidate.01" content="6DEEC57FAEDB817E93EC74B586C689C6"/>
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website Feed RSS"/>
+	</head>
+	<body onload="cache()" contextmenu="menu1">
+		<header>
+			<h1 style="font-size: 40px">26 de Julho: RC3 e Genesys a13v9</h1>
+		</header>
+		<a href="javascript:opt()" id="option"><img src="/back.png"/></a>
+		<a href="javascript:opt2()" id="opt2"><img src="/back-rtl.png"/></a>
+		<section id="conteudo">
+			<article>
+				<p>Neste dois dias, tivemos mais uma Genesys e a última RC antes da versão 1.0, poucas novidades e faltam 3 dias para o Grande Dia.</p>
+				<p>A versão RC3, teve a implantação final do novo logo, anúncios foram adicionados, como de costume o conteúdo e os idiomas foram atualizados e mais um MiniApp foi integrados a Tela Inicial.</p>
+				<p>Na Genesys, conteúdo atualizado, mais um MiniApp foi integrado a Tela Inicial e o MiniApp WebDesign foi adicionado.</p>
+				<p>Na próxima segunda-feira, será lançado a versão 1.0 e o Beta 3 do Folha Plus.</p>
+				<footer>
+					<time datetime="2013-07-26" pubdate="pubdate">26 de Julho de 2013</time>
+				</footer>
+			</article>
+		</section>
+		<section id="lateral">
+			<section id="lateral.Container" class="AbaContainer">
+				<section id="lateral.Header" class="AbaHeader">
+					<span onclick="changeTabControl(this.id)" id="lateral.Header.Tab.0" class="TabHeaderInline">Menu</span>
+					<span onclick="changeTabControl(this.id)" id="lateral.Header.Tab.1" class="TabHeaderHidden">Extras</span>
+				</section>
+				<section id="lateral.Body" class="AbaBody">
+					<span id="lateral.Body.Tab.0" class="TabBodyInline">
+						<button id="b1" onclick="location.href='/'" title="Página Inicial">Página Inicial</button>
+						<button id="b2" onclick="location.href='/app/'" title="Aplicativos">Aplicativos</button>
+						<button id="b3" onclick="location.href='/games/'" title="Jogos">Jogos</button>
+						<button id="b4" onclick="location.href='/projetos/'" title="Meus Projetos">Meus Projetos</button>
+						<button id="b5" onclick="location.href='/opensource/'" title="OpenSource">OpenSource</button>
+						<button id="b6" onclick="location.href='/programacao/'" title="Programação">Programação</button>
+						<button id="b7" onclick="location.href='/sobre/'" title="Sobre">Sobre</button>
+						<button id="b8" onclick="location.href='/support/'" title="Suporte">Suporte</button>
+						<button id="b9" onclick="location.href='/videos/'" title="Vídeos">Vídeos</button>
+						<button id="b10" onclick="location.href='/webdesign/'" title="WebDesign">Webdesign</button>
+						<button id="b11" onclick="location.href='/rss.xml'" title="WebFeed RSS">Feed RSS</button>
+					</span>
+					<span id="lateral.Body.Tab.1" class="TabBodyHidden">
+						<footer id="footer1">
+							<p>Cleber Matheus Website - 2013</p>
+							<time datetime="2013-07-24" pubdate="pubdate">24 de Julho de 2013</time>
+							<button onclick="cache()">Atualizar!</button>
+						</footer>
+						<div id="ads">
+							<script type="text/javascript">
+								bb_bid = "1677784";
+								bb_lang = "pt-BR";
+								bb_keywords = "site, apps, website, site pessoal";
+								bb_name = "custom";
+								bb_limit = "4";
+								bb_format = "bbd";
+							</script>
+							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+						</div>
+						<div id="ads">
+							<script type="text/javascript">
+								bb_bid = "1677784";
+								bb_lang = "pt-BR";
+								bb_keywords = "site, apps, website, site pessoal";
+								bb_name = "custom";
+								bb_limit = "9";
+								bb_format = "bbo";
+							</script>
+							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+						</div>
+					</span>
+				</section>
+			</section>
+			<section id="aba1"></section>
+			<section id="aba2"></section>
+		</section>
+		<menu id="menu1" type="context">
+			<menuitem id="sobre1" label="Sobre o Site" onclick="about()"></menuitem>
+		</menu>
+		<script type="text/javascript">
+			var aba = TabControl("lateral",220,100);
+			
+			aba.addTab("aba1", "Menu");
+			aba.addTab("aba2", "Extras");
+		</script>
+		<script type="text/javascript" async src="/tabs.js"></script>
+		<script type="text/javascript" async src="/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+CACHE MANIFEST
+#2013-08-01 v0.9.8
+
+CACHE:
+
+#StyleSheets
+app.css
+index.css
+mobile.css
+player.css
+
+#Javaript
+drag.js
+tabs.js
+index.js
+database.js
+6C6F67696E73.js
+
+#HTML and Pages
+/
+/app/
+/games/
+/projetos/
+/opensource/
+/programacao/
+/sobre/
+/support/
+/videos/
+/webdesign/
+
+#Images
+back.png
+back-rtl.png
+
+NETWORK:
+http://www.e-mai.net/imagens/banner4.gif
+http://static.boo-box.com/javascripts/embed.js
+
+FALLBACK:

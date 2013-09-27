@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR" manifest="/clebermatheus.appcache">
+	<!-- Cleber Matheus WebSite v0.9.0.6 -->
+	<head>
+		<title>Login - Vídeos/Gokaiger</title>
+		<link rel="stylesheet" href="/index.css"/>
+		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
+		<meta name="viewport" content="width: device-width, height: device-height"/>
+		<meta name="generator" content="Notepad++ v6.3.2"/>
+		<meta name="author" content="Cleber Matheus"/>
+		<link rel="shortcut icon" href="/favicon.ico"/>
+		<meta name="description" content="Login"/>
+		<meta name="reply-to" content="clebermatheus@outlook.com"/>
+		<meta name="keywords" content="Login"/>
+		<meta name="robots" content="noindex, nofollow"/>
+		<meta name="msapplication-TileColor" content="blue"/>
+		<meta name="msapplication-TileImage" content="/favicon.ico"/>
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Feed RSS"/>
+	</head>
+	<body contextmenu="menu1">
+		<header>
+			<h1>Login</h1>
+		</header>
+		<section id="conteudo">
+			<article>
+				<form name="login" autocomplete="on">
+					<input type="text" id="username" size="70" placeholder="Usuário"/><br/>
+					<input type="password" id="password" size="70" placeholder="Senha" onKeyPress="return submitenter(this,event)"/>
+					<input type="button" value="Login" onclick="slogin()"/>
+				</form>
+			</article>
+		</section>
+		<section id="lateral">
+			<nav id="menulateral">
+				<button id="b1" onclick="location.href='/app/'" title="Aplicativos">Aplicativos</button>
+				<button id="b2" onclick="location.href='/games/'" title="Jogos">Jogos</button>
+				<button id="b3" onclick="location.href='/projetos/'" title="Meus Projetos">Meus Projetos</button>
+				<button id="b4" onclick="location.href='/opensource/'" title="OpenSource">OpenSource</button>
+				<button id="b5" onclick="location.href='/programacao/'" title="Programação">Programação</button>
+				<button id="b6" onclick="location.href='/sobre/'" title="Sobre">Sobre</button>
+				<button id="b7" onclick="location.href='/videos'" title="Vídeos">Vídeos</button>
+				<button id="b8" onclick="location.href='/webdesign/'" title="WebDesign">Webdesign</button>
+				<button id="b9" onclick="location.href='/rss.xml'" title="WebFeed RSS">Feed RSS</button>
+			</nav>
+			<footer id="footer1">
+				<p>Cleber Matheus Website - 2013</p>
+				<time datetime="2013-05-13" pubdate="pubdate">13 de Maio de 2013</time>
+				<button onclick="cache()">Atualizar!</button>
+			</footer>
+		</section>
+		<menu id="menu1" type="context">
+			<menuitem id="sobre1" label="Sobre o Site" onclick="about()"></menuitem>
+		</menu>
+		<script type="text/javascript" async src="/index.js"></script>
+		<script type="text/javascript" async src="/6C6F67696E73.js"></script>
+	</body>
+</html>

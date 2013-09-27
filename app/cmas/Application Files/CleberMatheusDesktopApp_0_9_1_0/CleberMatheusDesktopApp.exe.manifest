@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CleberMatheusDesktopApp.exe" version="0.9.1.0" publicKeyToken="c01d49a9ca6df1d5" language="pt-BR" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="genesys.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CleberMatheusDesktopApp" version="0.9.1.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CleberMatheusDesktopApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CleberMatheusDesktopApp.exe" size="108544">
+      <assemblyIdentity name="CleberMatheusDesktopApp" version="0.9.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IxNC+IWAWZ8RZnCWubKSelATHmgJ7r2RgxhHE0S+8js=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\CleberMatheusDesktopApp.resources.dll" size="18432">
+      <assemblyIdentity name="CleberMatheusDesktopApp.resources" version="0.9.1.0" language="en-US" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RkSmLp7LghwgwzcL9SzmkDybBCQoHYfz1nOAUGtT0SA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\CleberMatheusDesktopApp.resources.dll" size="11264">
+      <assemblyIdentity name="CleberMatheusDesktopApp.resources" version="0.9.1.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XoBFPgIEAS9gj7QLj0buDemj0BSubJqVfbPsgYlDSbw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CleberMatheusDesktopApp.exe.config" size="177">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5Cl71GbhFS9rD6YTZpYbXpMTChV4WDqqdL3eFsPgipk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="genesys.ico" size="4158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cD64eTlYSsBavUk93Di1Yuvfbw79PtXv+QLuKvPJBFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="README.TXT" size="2135">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YHDKKiUNous5WLk8cQQUUxyN3yld53CIfkAHsSbJMM4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=PC2012\Família" issuerKeyHash="bc5a73f5e1046731d7845186f5ea72a6c5102642" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>JOsvFJHFSi2hEo215EquTLDVPeafM0L3stUNa5Z6KE8=</DigestValue></Reference></SignedInfo><SignatureValue>URzBeZ9TIQrshizRqxu7Rbxf6cB8Tz8vngNmgDTpNVPqDfOoI1kPx/PLP9WnPVz9ttbGLQRO5FsvzriYdz2axvVI9lW2vbJAo+e1CIzwE9HXvCF9tFVp3DSJBwZ8dAtgh4zedi/TYDcEJ/Sd0A9/AloFegI/U4ejqoIL3+XGXXc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rAb1z2YwOZlZ0pMd4zfTGtEvbLcv7e4Im7sHkskXOw3VR9OEnScgP7KlQV8jYxQjVz+G4crXeDcG18Kz5yr23+mLjbWGpobRxCFd57NHSfQn9TqBy9pm/sZni9pYlkhyB2Ly3OTUwvwYwQrz5siRXIhQrb8VYUJ8SZM0DBGFtNs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4f287a966b0dd5b2f742339fe63dd5b04cae4ae4b58d12a12d4ac591142feb24" Description="" Url=""><as:assemblyIdentity name="CleberMatheusDesktopApp.exe" version="0.9.1.0" publicKeyToken="c01d49a9ca6df1d5" language="pt-BR" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PC2012\Família</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>IXIAoEjYo+Iy2N1H+sZCw907EY0LJ2GFfVY2r+Av/xg=</DigestValue></Reference></SignedInfo><SignatureValue>aSa/J0n1SBwALE1obOTrBLhXzLh5MZUMH8W21HELFL9O+HSOdgV/0zYQdLuVqeEqs/6Bzd/sYjI+H5dqA88tdKKIZ1eIpiSz3jueNrjsL9MHGJrMGUezctuoL3JkWiV+9e7oSoGk0gBNXHkydJI+HT8mzhaH1NIlAMuO4x9/Z8s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rAb1z2YwOZlZ0pMd4zfTGtEvbLcv7e4Im7sHkskXOw3VR9OEnScgP7KlQV8jYxQjVz+G4crXeDcG18Kz5yr23+mLjbWGpobRxCFd57NHSfQn9TqBy9pm/sZni9pYlkhyB2Ly3OTUwvwYwQrz5siRXIhQrb8VYUJ8SZM0DBGFtNs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQM2fLlQq5aqBFdagpyz9H6zANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAUABDADIAMAAxADIAXABGAGEAbQDtAGwAaQBhMB4XDTEyMTIxNTIxMTIxMloXDTEzMTIxNjAzMTIxMlowJzElMCMGA1UEAx4cAFAAQwAyADAAMQAyAFwARgBhAG0A7QBsAGkAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArAb1z2YwOZlZ0pMd4zfTGtEvbLcv7e4Im7sHkskXOw3VR9OEnScgP7KlQV8jYxQjVz+G4crXeDcG18Kz5yr23+mLjbWGpobRxCFd57NHSfQn9TqBy9pm/sZni9pYlkhyB2Ly3OTUwvwYwQrz5siRXIhQrb8VYUJ8SZM0DBGFtNsCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBuWwXR4p7c0jnbMqGxJCK5fbNbiSYtwrrDl8bCU9FVZgz5RekVdRa1QdBtMxWVjMBGQFCE18gtzj8hipBxbn4s3AMQ3VFUyCDVkZe+g3/7k7KsWbgEGjWt7gAokt3qMjH0j1OH2DMrhfkN6mW81vl73CgwhhEFWPVq5gWLx+4B6Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

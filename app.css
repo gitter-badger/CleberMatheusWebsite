@@ -1,0 +1,15 @@
+﻿#app{
+	width: 84.5%;
+	height: 90%;
+	left: 0px;
+	top: 70px;
+	position: absolute;
+	background: transparent;
+}
+#app div{
+	position: relative;
+	float: left;
+	height: 150px;
+	width: 150px;
+	background: blue;
+}

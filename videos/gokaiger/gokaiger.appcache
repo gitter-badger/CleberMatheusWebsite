@@ -1,0 +1,21 @@
+﻿CACHE MANIFEST
+#2013-07-19 v0.9.5.0
+
+CACHE:
+
+#Javaript
+gokaiger.js
+
+#HTML
+index.html
+
+#Images
+ep1.jpg
+
+#Videos
+ep1.mp4
+ep1.ogv
+
+NETWORK:
+
+FALLBACK:

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cleber Matheus Website FeedRSS</title>
+		<link>http://clebermatheus.users.sourceforge.net</link>
+		<description>Website oficial de Cleber Matheus!</description>
+		<language>pt-BR</language>
+		<generator>Notepad++ v6.4.2</generator>
+		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
+		<pubDate>Tue, 30 Jul 2013 23:34:25 -0300</pubDate>
+		<image>
+			<url></url>
+			<title>Cleber Matheus Website</title>
+			<link>http://clebermatheus.users.sourceforge.net/</link>
+		</image>
+		<item>
+			<title>30 de Julho: 1.0, Beta 3 e o Grande Dia</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-30-07-2013.html</link>
+			<description>Ontem pode ser conhecido como o Grande Dia dos Lançamentos, pois o Cleber Matheus AppSeries chegou a 1.0 e o Folha Plus a beta 3 e pode...</description>
+			<pubDate>Tue, 30 Jul 2013 23:34:25 -0300</pubDate>
+		</item>
+		<item>
+			<title>26 de Julho: RC3 e Genesys a13v9</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-26-07-2013.html</link>
+			<description>Neste dois dias, tivemos mais uma Genesys e a última RC antes da versão 1.0, poucas novidades e faltam 3 dias para o...</description>
+			<pubDate>Fri, 26 Jul 2013 23:45:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Cleber Matheus AppSeries: RC2, duas Genesys e muito mais</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-24-07-2013.html</link>
+			<description>Faltam 5 dias para o grande lançamento da versão 1.0 do Cleber Matheus AppSeries e lançamento da versão Beta 3 do Folha Plus AppSeries...</description>
+			<pubDate>Wed, 24 Jul 2013 22:04:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Cleber Matheus AppSeries: Desktop, Alternative, Mobile e muito mais...</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-13-07-2013.html</link>
+			<description>Depois de seis meses, voltei a postar no site, porque estive muito ocupado com a faculdade. Voltando para as atualizações e novidades...</description>
+			<pubDate>Sat, 13 Jul 2013 22:04:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Atualizações de Janeiro de 2013!</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/01/post-31-01-2013.html</link>
+			<description>Neste mês de Janeiro, atualizei o iPlus e Cleber Matheus DesktopApp; lancei o Folha Plus DesktopApp e vem muito mais neste ano!</description>
+			<pubDate>Thu, 31 Jan 2013 20:31:34 -0300</pubDate>
+		</item>
+		<item>
+			<title>Atualizações de Fim de Ano! - 2012</title>
+			<link>http://clebermatheus.users.sf.net/posts/2012/12/post-27-12-2012.html</link>
+			<description>Nestas atualizações de fim de ano, irei falar sobre a atualização da versão Genesys 6 do Cleber Matheus DesktopApp e o que eu pretendo lançar em 2013.</description>
+			<pubDate>Thu, 27 Dec 2012 21:36:10 -0300</pubDate>
+		</item>
+		<item>
+			<title>Atualizações da Semana 50!</title>
+			<link>http://clebermatheus.users.sf.net/posts/2012/12/post-11-12-2012.html</link>
+			<description>Atualizações da semana 50 até o dia 11/12, com atualizações das versões Genesys do Cleber Matheus DesktopApp; adicionamento da página Vídeos entre outros.</description>
+			<pubDate>Tue, 11 Dec 2012 14:04:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Cleber Matheus AppSeries [Atualizados]</title>
+			<link>http://clebermatheus.users.sourceforge.net/#cmappseriesup1</link>
+			<description>Alguns aplicativos foram atualizados</description>
+			<pubDate>Fri, 30 Nov 2012 17:50:30 -0300</pubDate>
+		</item>
+		<item>
+			<title>MathML</title>
+			<link>http://clebermatheus.users.sourceforge.net/webdesign/html/#mathml</link>
+			<description>O MathML é um meio de exibir fórmulas matemáticas numa página HTML...</description>
+			<pubDate>Sat, 17 Nov 2012 14:27:10 -0300</pubDate>
+		</item>
+		<item>
+			<title>Cleber Matheus WebApp</title>
+			<link>http://clebermatheus.users.sourceforge.net/app/cmwa.html</link>
+			<description>Versão atual: Aplha 1</description>
+			<pubDate>Sun, 28 Oct 2012 22:09:30 -0300</pubDate>
+		</item>
+		<item>
+			<title>Atualização do site</title>
+			<link>http://clebermatheus.users.sourceforge.net/#atualizacao1</link>
+			<description>Hoje os site foi atualizado, ganhando icones na lateral esquerda no ...</description>
+			<pubDate>Thu, 27 Sep 2012 17:51:30 -0300</pubDate>
+		</item>
+		<item>
+			<title>Novas Páginas (Atualizado)</title>
+			<link>http://clebermatheus.users.sourceforge.net/opensource/#oquee</link>
+			<description>Novas páginas disponíveis!</description>
+			<pubDate>Thu, 20 Sep 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>O que é OpenSource?</title>
+			<link>http://clebermatheus.users.sourceforge.net/#newpage</link>
+			<description>Open Source (ou Código Aberto) é uma ramificação do movimento do Software Livre....</description>
+			<pubDate>Thu, 13 Sep 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Sobre o Site</title>
+			<link>http://clebermatheus.users.sourceforge.net/sobre/#sobresite</link>
+			<description>Um site dinâmico que mostra vários conteúdos sobre Programção, Webdesign entre outros.</description>
+			<pubDate>Sat, 8 Sep 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>LibreStore</title>
+			<link>http://clebermatheus.users.sourceforge.net/projetos/#librestore</link>
+			<description>É uma loja de aplicativos totalmente livre, para Windows, Linux, Mac OSX e BCM OS.</description>
+			<pubDate>Wed, 5 Sep 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Transports Simulator</title>
+			<link>http://clebermatheus.users.sourceforge.net/projetos/#transsimulator</link>
+			<description>É um simulador de Transportes Open Source.</description>
+			<pubDate>Wed, 5 Sep 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Folha Plus</title>
+			<link>http://clebermatheus.users.sourceforge.net/projetos/#folhaplus</link>
+			<description>O Folha Plus é um aplicativo de notícias, sobre o Blogs Cleber Matheus, o iPlus, BCM OS, BCM Office, Transports Simulator, OpenStore e o Cleber Matheus Website.</description>
+			<pubDate>Wed, 5 Sep 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Assembly</title>
+			<link>http://clebermatheus.users.sourceforge.net/programacao/#asm</link>
+			<description>Aprenda tudo sobre o Assembly e programe na Linguagem de Máguina.</description>
+			<pubDate>Thu, 26 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>C#</title>
+			<link>http://clebermatheus.users.sourceforge.net/programacao/#csharp</link>
+			<description>Aprenda tudo sobre o C#, e crie programas e jogos para Windows.</description>
+			<pubDate>Thu, 26 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>C++</title>
+			<link>http://clebermatheus.users.sourceforge.net/programacao/#cpp</link>
+			<description>Aprenda tudo sobre o C++, e crie programas e jogos para Windows.</description>
+			<pubDate>Thu, 26 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Site Online</title>
+			<link>http://clebermatheus.users.sourceforge.net/#siteonline</link>
+			<description>O site já está disponível!</description>
+			<pubDate>Thu, 26 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>BCM Office</title>
+			<link>http://clebermatheus.users.sourceforge.net/projetos/#bcmoffice</link>
+			<description>Uma suite de escritório totalmente gratuita.</description>
+			<pubDate>Wed, 18 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>BCM OS</title>
+			<link>http://clebermatheus.users.sourceforge.net/projetos/#bcmos</link>
+			<description>Um sistema operacional diferente.</description>
+			<pubDate>Wed, 18 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>iPlus</title>
+			<link>http://clebermatheus.users.sourceforge.net/projetos/#iplus</link>
+			<description>Um navegador diferente.</description>
+			<pubDate>Wed, 18 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>CSS3</title>
+			<link>http://clebermatheus.users.sourceforge.net/webdesign/#css3</link>
+			<description>A mais nova geração da folha de estilos, para a criação de websites mais bonitos e rápidos.</description>
+			<pubDate>Tue, 17 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>HTML5</title>
+			<link>http://clebermatheus.users.sourceforge.net/webdesign/#html</link>
+			<description>A Quinta Geração do HTML, que define o padrão de como os sites deverão serem exibidos.</description>
+			<pubDate>Tue, 17 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>JavaScript</title>
+			<link>http://clebermatheus.users.sourceforge.net/webdesign/#js</link>
+			<description>Conheça como deixar seu site mais dinâmico e mais interativo.</description>
+			<pubDate>Tue, 17 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Sobre o Autor</title>
+			<link>http://clebermatheus.users.sourceforge.net/sobre/#sobreautor</link>
+			<description>O Website Cleber Matheus, foi criado por Cleber Matheus, para poder conhecer o HTML, CSS, JavaScript, Assembly, C++, C# entre outros.</description>
+			<pubDate>Tue, 17 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Jogos em SVG</title>
+			<link>http://clebermatheus.users.sourceforge.net/games/#svg</link>
+			<description>Jogue jogos em svg, sem se preocupar com plugins de terceiros.</description>
+			<pubDate>Tue, 17 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Jogos em Canvas</title>
+			<link>http://clebermatheus.users.sourceforge.net/games/#canvas</link>
+			<description>Jogue jogos totalmente escritos em HTML5 e JavaScript.</description>
+			<pubDate>Tue, 17 Jul 2012 00:00:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Bem-vindo!</title>
+			<link>http://clebermatheus.users.sourceforge.net/#welcome</link>
+			<description>Seja bem-vindo ao site!</description>
+			<pubDate>Sun, 20 May 2012 00:00:00 -0300</pubDate>
+		</item>
+	</channel>
+</rss> 

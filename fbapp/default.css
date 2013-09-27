@@ -1,0 +1,304 @@
+/*
+	Este arquivo é parte do Cleber Matheus SocialApp
+    Cleber Matheus SocialApp é um software livre; você pode redistribui-lo e/ou 
+    modifica-lo dentro dos termos da Licença Pública Geral GNU como 
+    publicada pela Fundação do Software Livre (FSF); na versão 2 da 
+    Licença, ou (na sua opnião) qualquer versão.
+    Este programa é distribuido na esperança que possa ser  util, 
+    mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
+    MERCADO ou APLICAÇA(O EM PARTICULAR. Veja a
+    Licença Pública Geral GNU para maiores detalhes.
+    Você deve ter recebido uma cópia da Licença Pública Geral GNU
+    junto com este programa, se não, escreva para a Fundação do Software
+    Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+/* Cleber Matheus SocialApp v0.3.0.0 */
+html{
+	height: 100%;
+}
+body{
+	background-color: rgb(0, 0, 200);
+	color: rgb(255, 255, 255);
+	font-family: "Segoe UI Light", "Segoe UI", "Cailibri";
+	margin: auto;
+	background-attachment: fixed;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('/icomoon.eot');
+	src:url('/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/icomoon.svg#icomoon') format('svg'),
+		url('/icomoon.woff') format('woff'),
+		url('/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-arrow-left-4:before {
+	content: "\e071";
+}
+.icon-arrow-right-2:before {
+	content: "\e067";
+}
+.icon-loop:before {
+	content: "\e116";
+}
+h1{
+	font-size: 50px;
+	background-color: blue;
+	top: 0%;
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	text-align: left;
+}
+header{
+	position: fixed;
+}
+#home{
+	top: 134px;
+	text-align: left;
+	position: absolute;
+}
+#navigator{
+	top: 0px;
+	right: 0px;
+	position: absolute;
+}
+section{
+	position: absolute;
+	left: 10px;
+}
+button{
+	font-size: 20px;
+	background-color: blue;
+	text-align: left;
+	position: absolute;
+	color: white;
+	border: blue solid;
+	font-family: Segoe UI Light, Serif;
+}
+#b1{
+	width: 150px;
+	height: 150px;
+	left: 0px;
+	position: absolute;
+	top: 100px;
+}
+#b2{
+	width: 150px;
+	height: 150px;
+	left: 160px;
+	position: absolute;
+	top: 100px;
+}
+#b3{
+	width: 150px;
+	height: 150px;
+	left: 320px;
+	position: absolute;
+	top: 100px;
+}
+#b4{
+	width: 150px;
+	height: 150px;
+	left: 480px;
+	position: absolute;
+	top: 100px;
+}
+#b5{
+	width: 150px;
+	height: 150px;
+	left: 640px;
+	position: absolute;
+	top: 100px;
+	text-align: center;
+}
+#b6{
+	width: 150px;
+	height: 150px;
+	left: 800px;
+	position: absolute;
+	top: 100px;
+}
+#b7{
+	width: 150px;
+	height: 150px;
+	left: 0px;
+	position: absolute;
+	top: 260px;
+}
+#b8{
+	width: 150px;
+	height: 150px;
+	left: 160px;
+	position: absolute;
+	top: 260px;
+}
+#b9{
+	width: 150px;
+	height: 150px;
+	left: 320px;
+	position: absolute;
+	top: 260px;
+}
+#b10{
+	width: 150px;
+	height: 150px;
+	left: 480px;
+	position: absolute;
+	top: 260px;
+}
+#b11{
+	width: 150px;
+	height: 150px;
+	left: 640px;
+	position: absolute;
+	top: 260px;
+	text-align: center;
+}
+#forward, #back, #refresh{
+	position: absolute;
+	text-align: left;
+}
+#forward{
+	right: 30px;
+	top: 0px;
+	width: 32px;
+	height: 32px;
+}
+#back{
+	right: 60px;
+	top: 0px;
+	width: 32px;
+	height: 32px;
+}
+#refresh{
+	right: 0px;
+	top: 0px;
+	width: 32px;
+	height: 32px;
+}
+#ab1{
+	width: 48px;
+	height: 48px;
+	left: 0px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab2{
+	width: 48px;
+	height: 48px;
+	left: 50px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab3{
+	width: 48px;
+	height: 48px;
+	left: 100px;
+	position: absolute;
+	top: 60px;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+#ab4{
+	width: 48px;
+	height: 48px;
+	left: 150px;
+	position: absolute;
+	top: 60px;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+#ab5{
+	width: 48px;
+	height: 48px;
+	left: 200px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab6{
+	width: 48px;
+	height: 48px;
+	left: 250px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab7{
+	width: 48px;
+	height: 48px;
+	left: 300px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab8{
+	width: 48px;
+	height: 48px;
+	left: 350px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab9{
+	width: 48px;
+	height: 48px;
+	left: 400px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab10{
+	width: 48px;
+	height: 48px;
+	left: 450px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+#ab11{
+	width: 48px;
+	height: 48px;
+	left: 500px;
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+}
+iframe{
+	top: 100px;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+#asb1{
+	width: 310px;
+	height: 150px;
+	left: 0px;
+	position: absolute;
+	top: 110px;
+}
+#asb2{
+	width: 310px;
+	height: 150px;
+	left: 320px;
+	position: absolute;
+	top: 110px;
+}
+#asb3{
+	width: 310px;
+	height: 150px;
+	left: 640px;
+	position: absolute;
+	top: 110px;
+}

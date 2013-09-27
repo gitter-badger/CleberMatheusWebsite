@@ -1,0 +1,59 @@
+﻿-- Cleber Matheus DesktopApp RC1 Version 0.9 --
+// Descrição
+	Nome: Cleber Matheus DesktopApp RC1
+	Versão: 0.9.0.0
+	Licença: GNU Versão 3 - Software Livre
+	Compatibilidade: Windows 7 com +IE10(recomendado)/Windows 8 com +IE10
+	
+// ChangeLog
+	v0.9 - RC1
+		* Os MiniApps Página Principal, Blogs, Central de Aplicativos, Cleber Matheus AppSeries, ChangeLog e Jogos foram integrados a Tela Inicial
+		* Tela Inicial reorganizado
+		* Tela Inicial reorganizado no Alternative de acordo com o idioma escolhido
+		- Reiniciar o App no Alternative removido
+		+ Adicionado o botão Voltar
+	v0.8 - Beta 4
+		+ Adicionado o MiniApp Vídeos
+		+ Adicionado o Idioma Italiano na Versão Alternative
+		+ MiniApp Vídeos suporta todos os idiomas suportados pelo Alternative
+	v0.7 - Beta 3
+		+ Adicionado o MiniApp Sobre
+		+ Adicionado o Idioma Espanhol na Versão Alternative
+		+ Adicionado o MiniApp ChangeLog
+	v0.6 - Beta 2
+		+ Adicionado o MiniApp Programação
+		+ Adicionado o idioma Inglês US na Versão Alternative
+	v0.5 - Beta 1
+		+ Adicionado a Versão Alternative
+		+ Adicionado o MiniApp OpenSource
+	v0.4
+		+ Adicionado o MiniApp Jogos
+		+ Adicionado o MiniApp Meus Projetos
+		* Iframes Atualizados
+	v0.3
+		* MiniApps reorganizados
+		+ MiniApp Blogs adicionado e funcionando
+		* MiniApp Página Principal atualizado
+		* Atualizado o MiniApp Cleber Matheus AppsSeries
+		+ Adicionado o MiniApp Central de Aplicativos
+	v0.2
+		+ Adicionado o MiniApp Vídeos
+		+ Adicionado o MiniApp Blogs
+		+ Adicionado o MiniApp Cleber Matheus Apps Series
+		+ Adicionado os botões de navegação
+		* MiniApps Reogranizados em ordem alfabética
+	v0.1
+		+ Adicionado a Tela Inicial
+		+ Adicionado o Botão para Fechar a Janela
+	
+// Contato
+	Bugs ou erros favor enviar um email para:
+	clebermatheus@outlook.com
+	
+// Licença
+					 GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
