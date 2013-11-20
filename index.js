@@ -112,3 +112,8 @@ function opt2(){
 		document.getElementsByTagName('h1')[0].style.width='100%';
 	}
 }
+function optMenu(){
+	document.getElementById('HoverMenu').style.display="block";
+	document.getElementById('lateral').style.display="none";
+	document.getElementById('optMenu').style.display="none";
+}
