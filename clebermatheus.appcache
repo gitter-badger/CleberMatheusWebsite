@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2013-08-01 v0.9.8
+#2013-11-20 v0.9.8.2
 
 CACHE:
 
@@ -31,6 +31,7 @@ database.js
 #Images
 back.png
 back-rtl.png
+menu.png
 
 NETWORK:
 http://www.e-mai.net/imagens/banner4.gif
