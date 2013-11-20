@@ -84,7 +84,7 @@ function submitenter(myfield,e){
 	}
 }
 var opt1 = document.getElementById('opt2');
-var opt3 = document.getElementById('opt2').style.dsiplay="none";
+var opt3 = document.getElementById('opt2').style.display="none";
 if(opt1==opt3){
 	document.getElementById('option').style.display="block";
 }
@@ -101,7 +101,7 @@ function opt(){
 	document.getElementById('opt2').style.display="block";
 	if(screen.width>700){
 		document.getElementById('conteudo').style.width="84.5%";
-		document.getElementsByTagName('h1')[0].style.width="84.5%";
+		document.getElementsByTagName('h1')[0].style.width="79.5%";
 	}
 }
 function opt2(){
@@ -109,11 +109,17 @@ function opt2(){
 	document.getElementById('opt2').style.display="none";
 	if(screen.width>700){
 		document.getElementById('conteudo').style.width="100%";
-		document.getElementsByTagName('h1')[0].style.width='100%';
+		document.getElementsByTagName('h1')[0].style.width='95%';
 	}
 }
 function optMenu(){
 	document.getElementById('HoverMenu').style.display="block";
-	document.getElementById('lateral').style.display="none";
 	document.getElementById('optMenu').style.display="none";
+	document.getElementById('nav1').style.height=window.innerHeight;
+	document.getElementById('MPr').style.display="table";
+	document.getElementById('MPr').style.height=window.innerHeight;
+}
+function HMenu(){
+	document.getElementById('HoverMenu').style.display='none';
+	document.getElementById('optMenu').style.display='block';
 }

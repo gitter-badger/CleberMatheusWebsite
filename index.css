@@ -22,8 +22,8 @@ h1{
 	font-size: 50px;
 	top: -40px;
 	position: absolute;
-	width: 84.5%;
-	left: 0px;
+	width: 79.5%;
+	left: 70px;
 	height: auto;
 }
 #conteudo{
@@ -113,29 +113,53 @@ section.AbaBody .TabBodyInline{
 #optMenu{
 	display: block;
 	top: 0px;
-	right: 0px;
+	left: 0px;
 	position: fixed;
 	z-index: 1000;
+	background-color: blue;
 }
 #HoverMenu{
-	display: block;
-	width: 210px;
-	right: 0px;
+	display: none;
+	width: 100%;
+	left: 0px;
 	top: 0px;
 	position: fixed;
+	background-color: rgba(0, 0, 255, 0.25);
+	overflow-x: hidden;
 	height: 100%;
-	background-color: blue;
-	/*display: block;*/
+	z-index: 1000;
 }
-#HoverMenu ul li{
-	top: 64px;
-	/*background-color: rgb(200, 200, 200);*/
+#nav1{
+	background-color: rgba(0, 0, 255, 0.25);
+	display: block;
+	height: 10px;
+	width: 300px;
+}
+#MPr{
+	width: 300px;
+	background: blue;
+	margin: auto;
+	height: 100%;
+	position: fixed;
+}
+#MPr li{
 	border-color: white;
-	margin: 2px;
 	height: 20px;
 	font-size: 20px;
+	list-style: none;
+	border-bottom: 0px;
+	background: rgba(0, 0, 255, 0.75);
 }
-/* Para telas com tamanho de no máximo 700px */
+#MPr li:hover{
+	background-color: white;
+	color: blue;
+	list-style: none;
+	height: 20px;
+	font-size: 20px;
+	border-color: white;
+	border-bottom: 0px;
+}
+/* Para telas com tamanho máximo 700px */
 @media only screen and (max-width: 700px){
 	h1{
 		font-size: 25px;
