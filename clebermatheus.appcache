@@ -2,14 +2,13 @@ CACHE MANIFEST
 #2013-11-20 v0.9.8.2
 
 CACHE:
-
 #StyleSheets
 app.css
 index.css
 mobile.css
 player.css
 
-#Javaript
+#Javascripts
 drag.js
 tabs.js
 index.js
@@ -34,7 +33,6 @@ back-rtl.png
 menu.png
 
 NETWORK:
-http://www.e-mai.net/imagens/banner4.gif
 http://static.boo-box.com/javascripts/embed.js
 
 FALLBACK:
