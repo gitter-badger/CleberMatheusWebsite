@@ -24,7 +24,7 @@ h1{
 	position: fixed;
 	width: 79.5%;
 	left: 64px;
-	height: auto;
+	height: 70px;
 	z-index: 750;
 }
 #conteudo{
@@ -166,14 +166,14 @@ section.AbaBody .TabBodyInline{
 	right: 5%;
 	top: 5%;
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 200, 0.5);
 }
 #Tabs{
-	background-color: rgba(0, 0, 200, 0.5);
+	background-color: rgba(0, 0, 228, 0.75);
 	padding: 10px 1em;
 }
 #Content, #Content section{
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 200, 0.5);
 }
 /* Para telas com tamanho máximo 700px */
 @media only screen and (max-width: 700px){

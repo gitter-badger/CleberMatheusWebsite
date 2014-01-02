@@ -95,6 +95,7 @@ if(document.body.clientWidth>700){
 else{
 	document.getElementById('lateral').style.display="none";
 	document.getElementById('option').style.display="block";
+	document.getElementById('Mimg').src="menu.png";
 }
 function opt(){
 	document.getElementById('lateral').style.display="block";
