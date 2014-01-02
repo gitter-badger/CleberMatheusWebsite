@@ -172,8 +172,16 @@ section.AbaBody .TabBodyInline{
 	background-color: rgba(0, 0, 228, 0.75);
 	padding: 10px 1em;
 }
-#Content, #Content section{
+#Content section{
 	background-color: rgba(0, 0, 200, 0.5);
+}
+#Content{
+	position: absolute;
+	left: 25%;
+	top: 10%;
+	width: 70%;
+	height: 80%;
+	background: transparent;
 }
 /* Para telas com tamanho máximo 700px */
 @media only screen and (max-width: 700px){
