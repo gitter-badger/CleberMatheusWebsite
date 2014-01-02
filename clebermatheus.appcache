@@ -30,7 +30,10 @@ database.js
 #Images
 back.png
 back-rtl.png
+favicon.ico
 menu.png
+menu@1.5x.png
+menu@2x.png
 
 NETWORK:
 http://static.boo-box.com/javascripts/embed.js

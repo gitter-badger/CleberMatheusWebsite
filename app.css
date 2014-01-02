@@ -1,15 +1,21 @@
 ﻿#app{
-	width: 84.5%;
+	width: 100%;
 	height: 90%;
 	left: 0px;
 	top: 70px;
 	position: absolute;
 	background: transparent;
 }
-#app div{
+#app a{
 	position: relative;
 	float: left;
-	height: 150px;
-	width: 150px;
+	height: 130px;
+	width: 250px;
 	background: blue;
+	display: block;
+}
+#app a img{
+	float: left;
+	height: 128px;
+	width: 128px;
 }

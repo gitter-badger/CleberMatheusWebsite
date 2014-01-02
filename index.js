@@ -36,7 +36,7 @@ function cache(){
 	}, false);
 }
 function about(){
-	window.alert("Sobre...\n\tCleber Matheus WebSite v0.9.8");
+	window.alert("Sobre...\r\n\tCleber Matheus WebSite v0.9.8.2");
 }
 function css(){
 	location.href="/webdesign/css";
