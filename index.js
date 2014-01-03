@@ -126,8 +126,8 @@ function HMenu(){
 }
 function ChangeTab(idtab){
 	i = 0;
-	var tmp = idtab+i;
-	while(document.getElementById(tmp)!="inactive"){
+	var tmp;
+	while(document.getElementById(tmp = idtab+i)!="inactive"){
 		document.getElementById(tmp).className="inactive";
 		document.getElementById("Con"+tmp).style.display="none";
 		i++;
