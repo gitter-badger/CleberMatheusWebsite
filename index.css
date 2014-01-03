@@ -170,8 +170,20 @@ section.AbaBody .TabBodyInline{
 }
 #Tabs{
 	background-color: rgba(0, 0, 228, 0.75);
-	padding: 10px 1em;
+	padding: 7.5px 1em;
 }
+#Tabs span{
+	background-color: white;
+	color: blue;
+	height: 30px;
+	width: 50px;
+	border-radius: 5px 5px 0px 0px;
+	padding: 5px 10px;
+}
+#Tabs .active{
+	cursor: pointer;
+}
+#Tabs .inactive{}
 #Content section{
 	background-color: rgba(0, 0, 200, 0.5);
 }
@@ -182,6 +194,12 @@ section.AbaBody .TabBodyInline{
 	width: 70%;
 	height: 80%;
 	background: transparent;
+}
+#Content .active{
+	display: block;
+}
+#Content .inactive{
+	display: none;
 }
 /* Para telas com tamanho máximo 700px */
 @media only screen and (max-width: 700px){
