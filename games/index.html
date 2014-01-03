@@ -60,13 +60,13 @@
 			</nav>
 			<section id="MenuTab">
 				<section id="Tabs">
-					<span id="Tab0" class="active">Menu Local</span>
-					<span id="Tab1" class="inactive">Extras</span>
+					<span id="Tab0" class="active" onclick="ChangeTab('Tab', 0)">Menu Local</span>
+					<span id="Tab1" class="inactive" onclick="ChangeTab('Tab', 1)">Extras</span>
 				</section>
 				<section id="Content">
 					<section id="ConTab0" class="active">
-						<button id="b1" onclick="location.href='/games/canvas/'" title="Jogos em Canvas">Jogos em Canvas</button>
-						<button id="b2" onclick="location.href='/games/svg/'" title="Jogos em SVG">Jogos em SVG</button>
+						<a href="/games/canvas/"><img src="/games/canvas/favicon.png" alt="Jogos em Canvas"/><span>Jogos em Canvas</span></a>
+						<a href="/games/svg/" style="left: 10px;"><img src="/games/svg/favicon.png" alt="Jogos em SVG"/><span>Jogos em SVG</span></a>
 					</section>
 					<section id="ConTab1" class="inactive">
 						<div id="ads">
@@ -80,8 +80,8 @@
 							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
 						</div>
 						<footer id="footer1">
-							<p>Cleber Matheus Website - 2013</p>
-							<time datetime="2013-11-20" pubdate="pubdate">20 de Novembro de 2013</time>
+							<p>Cleber Matheus Website - 2014</p>
+							<time datetime="2014-01-02" pubdate="pubdate">2 de Janeiro de 2014</time>
 							<button onclick="cache()">Atualizar!</button>
 						</footer>
 					</section>

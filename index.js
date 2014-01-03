@@ -124,3 +124,11 @@ function HMenu(){
 	document.getElementById('HoverMenu').style.display='none';
 	document.getElementById('optMenu').style.display='block';
 }
+function ChangeTab(idtab, ina){
+	for(var i=0; document.getElementById(idtab+i)=="active" || i<10; i++){
+		document.getElementById(idtab+i).className="inactive";
+		document.getElementById("Con"+idtab+i).style.display="none";
+	}
+	document.getElementById("Con"+idtab+ina).style.display="block";
+	document.getElementById(idtab+ina).className="active";
+}

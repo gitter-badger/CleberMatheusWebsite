@@ -173,27 +173,41 @@ section.AbaBody .TabBodyInline{
 	padding: 7.5px 1em;
 }
 #Tabs span{
-	background-color: white;
 	color: blue;
-	height: 30px;
-	width: 50px;
 	border-radius: 5px 5px 0px 0px;
 	padding: 5px 10px;
 }
 #Tabs .active{
+	background-color: white;
 	cursor: pointer;
 }
-#Tabs .inactive{}
+#Tabs .inactive{
+	background-color: rgb(200, 200, 200);
+}
 #Content section{
 	background-color: rgba(0, 0, 200, 0.5);
 }
 #Content{
-	position: absolute;
-	left: 25%;
-	top: 10%;
 	width: 70%;
-	height: 80%;
-	background: transparent;
+	height: 90%;
+	right: 5%;
+	top: 10%;
+	position: fixed;
+	background-color: rgba(0, 0, 200, 0.5);
+}
+#Content a{
+	position: relative;
+	float: left;
+	height: 130px;
+	width: 250px;
+	background: blue;
+	display: block;
+	left: 0%;
+}
+#Content a img{
+	float: left;
+	height: 128px;
+	width: 128px;
 }
 #Content .active{
 	display: block;
