@@ -124,16 +124,11 @@ function HMenu(){
 	document.getElementById('HoverMenu').style.display='none';
 	document.getElementById('optMenu').style.display='block';
 }
-function ChangeTab(idtab){
-	i = 0;
-	var tmp;
-	while(document.getElementById(tmp = idtab+i)!="inactive"){
-		document.getElementById(tmp).className="inactive";
-		document.getElementById("Con"+tmp).style.display="none";
-		i++;
+function ChangeTab(idtab, act){
+	for(i=0; document.getElementById(idtab+i).className=="active"; i++){
+		document.getElementById(idtab+i).className="inactive";
+		document.getElementById("Con"+idtab+i).style.display="none";
 	}
-}
-function ActiveTab(idtab, act){
 	document.getElementById(idtab+act).className="active";
 	document.getElementById("Con"+idtab+act).style.display="block";
 }
