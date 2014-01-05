@@ -215,6 +215,23 @@ section.AbaBody .TabBodyInline{
 #Content .inactive{
 	display: none;
 }
+#breakout{
+	display: none;
+	background: black;
+}
+#bc1, #bc2{
+	color: white;
+	height: 20px;
+	text-decoration: none;
+	width: 160px;
+}
+#bc1{
+	background-color: white;
+	color: blue;
+}
+#bc2{
+	background-color: #FFFD0A;
+}
 /* Para telas com tamanho máximo 700px */
 @media only screen and (max-width: 700px){
 	h1{
