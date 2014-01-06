@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" manifest="/clebermatheus.appcache">
+	<head>
+		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<meta charset="UTF-8"/>
+		<title>Introdução a Linguagem Assembly (Traduzido)</title>
+		<link rel="stylesheet" href="/index.css"/>
+		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="author" content="Cleber Matheus"/>
+		<link rel="shortcut icon" href="favicon.png"/>
+		<meta name="description" content="Aprenda a programar em Assembly"/>
+		<meta name="reply-to" content="clebermatheus@outlook.com"/>
+		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
+		<meta name="keywords" content="Introdução a Assembly, Introduction to Assembly(Translated)"/>
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website Feed RSS"/>
+	</head>
+	<body onload="cache()" contextmenu="menu1">
+		<header>
+			<h1 style="width: 100%;">Introdução a Linguagem Assembly</h1>
+			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+		</header>
+		<section id="conteudo" style="width: 100%;">
+			<article>
+				<header>
+					<h2>Introdução a Linguagem Assembly</h2>
+				</header>
+				<p>Este é uma breve introdução a Linguagem Assembly. Assembly é a linguagem mais básica de programação disponível para qualquer processador. Com a linguagem Assembly, um programador trabalha somente com operações implementadas diretamente na CPU física. Linguagem Assembly carece de conveniências de alto-nível como variáveis e funções, e não é portátil entre as diversas famílias de processadores. No entanto, a linguagem Assembly é a linguagem de programação mais poderosa disponível no computador, e dá aos programadores a visão necessária para escrever código eficiente em linguagens de alto-nível. Aprender a Linguagem Assembly é valorizar o tempo e o esforço de todos os programadores sérios.</p>
+				<footer>
+					<time datetime="2014-01-06" pubdate="pubdate">6 de Janeiro de 2014</time>
+				</footer>
+			</article>
+		</section>
+		<section id="HoverMenu" onclick="HMenu()">
+			<nav id="nav1">
+				<ul id="MPr">
+					<h2>Menu</h2>
+					<li><a href="/">Página Inicial</a></li>
+					<li><a href="/app/">Aplicativos</a></li>
+					<li><a href="/games/">Jogos</a></li>
+					<li><a href="/projetos/">Meus Projetos</a></li>
+					<li><a href="/opensource/">OpenSource</a></li>
+					<li><a href="/programacao/">Programação</a></li>
+					<li><a href="/sobre/">Sobre</a></li>
+					<li><a href="/support/">Suporte</a></li>
+					<li><a href="/videos/">Vídeos</a></li>
+					<li><a href="/webdesgin/">WebDesign</a></li>
+					<li><a href="/rss.xml">Feed RSS</a></li>
+				</ul>
+			</nav>
+			<section id="MenuTab">
+				<section id="Tabs">
+					<span id="Tab0" class="active" onclick="ChangeTab('Tab', 0)">Linguagens</span>
+					<span id="Tab1" class="inactive" onclick="ChangeTab('Tab', 1)">Extras</span>
+				</section>
+				<section id="Content">
+					<section id="ConTab0" class="active">
+						<a href="/programacao/assembly/"><img src="/programacao/assembly/favicon.png" alt="Assembly"/><span>Assembly</span></a>
+						<a href="/programacao/c/" style="left: 10px;"><img src="/programacao/c/favicon.png" alt="C"/><span>C</span></a>
+						<a href="/programacao/cpp/" style="left: 20px;"><img src="/programacao/cpp/favicon.png" alt="C++"/><span>C++</span></a>
+						<a href="/programacao/csharp/" style="left: 30px;"><img src="/programacao/csharp/favicon.png" alt="C#"/><span>C#</span></a>
+						<a href="/programacao/java/" style="left: 40px;"><img src="/programacao/java/favicon.png" alt="Java"/><span>Java</span></a>
+					</section>
+					<section id="ConTab1" class="inactive">
+						<div id="ads">
+							<script type="text/javascript">
+								bb_bid = "1677784";
+								bb_lang = "pt-BR";
+								bb_name = "custom";
+								bb_limit = "4";
+								bb_format = "bbk";
+							</script>
+							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+						</div>
+						<footer id="footer1">
+							<p>Cleber Matheus Website - 2014</p>
+							<time datetime="2014-01-06" pubdate="pubdate">6 de Janeiro de 2014</time>
+							<button onclick="cache()">Atualizar!</button>
+						</footer>
+					</section>
+				</section>
+			</section>
+		</section>
+		<menu id="menu1" type="context">
+			<menuitem id="sobre1" onclick="about()">Sobre...</menuitem>
+			<menuitem id="asm1" onclick="assembly()">Assembly</menuitem>
+			<menuitem id="c1" onclick="c()">C</menuitem>
+			<menuitem id="cpp1" onclick="cpp()">C++</menuitem>
+			<menuitem id="csharp1" onclick="csharp()">C#</menuitem>
+			<menuitem id="java1" onclick="java()">Java</menuitem>
+		</menu>
+		<script type="text/javascript" async src="/index.js"></script>
+	</body>
+</html>
