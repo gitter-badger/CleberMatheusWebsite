@@ -21,12 +21,26 @@
 		</header>
 		<section id="conteudo" style="width: 100%;">
 			<article>
-				<header>
-					<h2>Introdução a Linguagem Assembly</h2>
-				</header>
 				<p>Este é uma breve introdução a Linguagem Assembly. Assembly é a linguagem mais básica de programação disponível para qualquer processador. Com a linguagem Assembly, um programador trabalha somente com operações implementadas diretamente na CPU física. Linguagem Assembly carece de conveniências de alto-nível como variáveis e funções, e não é portátil entre as diversas famílias de processadores. No entanto, a linguagem Assembly é a linguagem de programação mais poderosa disponível no computador, e dá aos programadores a visão necessária para escrever código eficiente em linguagens de alto-nível. Aprender a Linguagem Assembly é valorizar o tempo e o esforço de todos os programadores sérios.</p>
+				<h2>O Básico</h2>
+				<p>Antes de podermos explorar o processo de escrever programas de computador, temos que voltar para o básico e saber exatamente o que é um computador e como ele funciona. Cada computador, não importa quão simples ou complexo, tem no seu cerne exatamente duas coisas: uma CPU e alguma memória. Juntas, essas duas coisas são o que tornam possível que o seu computador execute programas.</p>
+				<p>No nível mais básico, um programa de computador nada mais é do que uma coleção de números armazenados na memória. Números diferentes dizem para a CPU fazer coisas diferentes. A CPU lê os números um de cada vez, decodifica-os e executa o que os números dizem. Por exemplo, se a CPU lê o número 64 como parte de um programa, ela irá adicionar 1 ao número armazenado em um local especial chamado AX. Se a CPU lê o número 146, vai trocar o número armazenado em AX com o número armazenado em outro local chamado BX. Ao combinar várias operações simples, como estas em um programa, um programador pode fazer o computador realizar muitas coisas incríveis.</p>
+				<p>Como exemplo, aqui estão os números de um simples programa de computador: 184, 0, 184, 142, 216, 198, 6, 158, 15, 36, 205, 32. Se você digitar esses números na memória do seu computador e executá-los no MS-DOS, você veria um sinal de dólar ($) colocado no canto inferior direito da tela, uma vez que é o que estes números dizem que o computador faça.</p>
+				<h2>A Linguagem Assembly</h2>
+				<p>Embora os números do programa acima façam sentido para um computador, eles não são claros para um ser humano. Quem poderia imaginar que o código colocaria um cifrão na tela? Claramente, manipular números diretamente é uma péssima maneira de escrever um programa.</p>
+				<p>Não tem que ser assim. Um tempo atrás, alguém veio com a ideia de que os programas de computador poderiam ser escritos com palavras, em vez de números. Então um programa especial chamado montador pegaria as palavras do programador e converteria em números que o computador pudesse entender. Este novo método consiste em escrever um programa em linguagem Assembly. Isso salvou os programadores de milhares de horas de esforço, já que não tinham mais que procurar números difíceis de lembrar nas costas de livros de programação, em vez disso bastava usar palavras simples.</p>
+				<p>O programa acima, escrito em linguagem Assembly, é assim:</p>
+				<pre>
+				MOV AX, 47104
+				MOV DS, AX
+				MOV [3998], 36
+				INT 32
+				</pre>
+				<p>Quando um montador lê este programa exemplo, converte cada linha de código em uma instrução de nível de CPU. Este programa utiliza dois tipos de instruções, MOV e INT. Em processadores Intel, a instrução MOV movimenta dados, enquanto a instrução INT transfere o controle do processador para os drivers de dispositivo ou sistema operacional.</p>
+				<p>O programa ainda não está completamente claro, mas é muito mais fácil de entender do que era antes. A primeira instrução, MOV AX, 47104, informa ao computador para copiar o número 47104 no local AX. A próxima instrução, MOV DS, AX, informa ao computador para copiar o número em AX para o local DS. A próxima instrução, MOV [3998], 36 diz ao computador para colocar o número 36 em memória na posição 3998. Finalmente, INT 32 finaliza o programa, retornando ao sistema operacional.</p>
 				<footer>
-					<time datetime="2014-01-06" pubdate="pubdate">6 de Janeiro de 2014</time>
+					<p>Artigo Original: <a href="http://www.swansontec.com/sprogram.html">Introduction to Assembly Language</a></p>
+					<time datetime="2014-01-06" pubdate="pubdate">Artigo publicado em 6 de Janeiro de 2014.</time>
 				</footer>
 			</article>
 		</section>
