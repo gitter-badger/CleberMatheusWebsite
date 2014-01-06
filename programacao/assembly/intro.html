@@ -34,10 +34,10 @@
 				MOV AX, 47104
 				MOV DS, AX
 				MOV [3998], 36
-				INT 32
-				</pre>
+				INT 32</pre>
 				<p>Quando um montador lê este programa exemplo, converte cada linha de código em uma instrução de nível de CPU. Este programa utiliza dois tipos de instruções, MOV e INT. Em processadores Intel, a instrução MOV movimenta dados, enquanto a instrução INT transfere o controle do processador para os drivers de dispositivo ou sistema operacional.</p>
 				<p>O programa ainda não está completamente claro, mas é muito mais fácil de entender do que era antes. A primeira instrução, MOV AX, 47104, informa ao computador para copiar o número 47104 no local AX. A próxima instrução, MOV DS, AX, informa ao computador para copiar o número em AX para o local DS. A próxima instrução, MOV [3998], 36 diz ao computador para colocar o número 36 em memória na posição 3998. Finalmente, INT 32 finaliza o programa, retornando ao sistema operacional.</p>
+				<p>Antes de prosseguirmos, gostaria de explicar como funciona este programa. Dentro do CPU existe uma quantidade de locais, chamados registradores, que podem armazenar um número. Alguns registradores, como o AX, são de uso geral, e não fazem nada de especial. Outros registradores, como o DS, controla a forma como o processador funciona. DS funciona como um registrador de segmento, e é usado para escolher qual área de memória da CPU pode gravar. Em nosso programa, vamos colocar o número 47104 para DS, que fala para a CPU acessar a memória na placa de vídeo. A próxima coisa que nosso programa faz é colocar o número 36 na localização 3998 da memória da placa de vídeo. Como o 36 é o código para o sinal de dólar ”$” e 3998 é a posição de memória do canto inferior direito da tela, um cifrão aparece na tela alguns microssegundos depois. Finalmente, o nosso programa informa a CPU para realizar o que se chama uma interrupção. Uma interrupção é usada para parar um programa e executar um outro em seu lugar. No nosso caso, usamos a interrupção 32, que termina o nosso programa e retorna para o MS-DOS, ou qualquer outro programa que foi usado para iniciar o nosso programa.</p>
 				<footer>
 					<p>Artigo Original: <a href="http://www.swansontec.com/sprogram.html">Introduction to Assembly Language</a></p>
 					<time datetime="2014-01-06" pubdate="pubdate">Artigo publicado em 6 de Janeiro de 2014.</time>
