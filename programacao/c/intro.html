@@ -3,31 +3,32 @@
 	<head>
 		<!-- Cleber Matheus WebSite v0.9.8.2 -->
 		<meta charset="UTF-8"/>
-		<title>Jogos puro em Canvas - Games|Cleber Matheus Website</title>
+		<title>Introdução a Linguagem C</title>
 		<link rel="stylesheet" href="/index.css"/>
 		<meta name="generator" content="Notepad++ v6.5.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
-		<meta name="description" content="Conheça alguns jogos puros em canvas, com o poder do HTML5."/>
+		<meta name="description" content="Aprenda a programar em C"/>
 		<meta name="reply-to" content="clebermatheus@outlook.com"/>
 		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
-		<meta name="keywords" content="Jogos em Canvas, games, canvas, games in canvas"/>
-		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website Feed RSS"/>
+		<meta name="keywords" content="Introdução ao C, Introduction to C, Introdução a Linguagem C"/>
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website FeedRSS"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
-			<h1 style="width: 100%;">Jogos em Canvas</h1>
+			<h1 style="width: 100%;">C</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
 		</header>
 		<section id="conteudo" style="width: 100%;">
-			<article>
+			<article id="introC">
 				<header>
-					<h2>Breakout</h2>
+					<h2>Introdução a Linguagem C</h2>
 				</header>
-				<p>Jogue breakout no seu navegador sem plugins.</p>
-				<p><a href="/games/canvas/breakout/">Jogue Agora</a></p>
+				<p></p>
+				<p></p>
 				<footer>
-					<time datetime="2013-08-02" pubdate="pubdate">2 de Agosto de 2013</time>
+					<time datetime="2014-01-06" pubdate="pubdate">Artigo publicado em 6 de Janeiro de 2014</time>
 				</footer>
 			</article>
 		</section>
@@ -50,13 +51,16 @@
 			</nav>
 			<section id="MenuTab">
 				<section id="Tabs">
-					<span id="Tab0" class="active" onclick="ChangeTab('Tab', 0)">Menu Local</span>
+					<span id="Tab0" class="active" onclick="ChangeTab('Tab', 0)">Linguagens</span>
 					<span id="Tab1" class="inactive" onclick="ChangeTab('Tab', 1)">Extras</span>
 				</section>
 				<section id="Content">
 					<section id="ConTab0" class="active">
-						<a href="/games/canvas/"><img src="/games/canvas/favicon.png" alt="Jogos em Canvas"/><span>Jogos em Canvas</span></a>
-						<a href="/games/svg/" style="left: 10px;"><img src="/games/svg/favicon.png" alt="Jogos em SVG"/><span>Jogos em SVG</span></a>
+						<a href="/programacao/assembly/"><img src="/programacao/assembly/favicon.png" alt="Assembly"/><span>Assembly</span></a>
+						<a href="/programacao/c/" style="left: 10px;"><img src="/programacao/c/favicon.png" alt="C"/><span>C</span></a>
+						<a href="/programacao/cpp/" style="left: 20px;"><img src="/programacao/cpp/favicon.png" alt="C++"/><span>C++</span></a>
+						<a href="/programacao/csharp/" style="left: 30px;"><img src="/programacao/csharp/favicon.png" alt="C#"/><span>C#</span></a>
+						<a href="/programacao/java/" style="left: 40px;"><img src="/programacao/java/favicon.png" alt="Java"/><span>Java</span></a>
 					</section>
 					<section id="ConTab1" class="inactive">
 						<div id="ads">
@@ -71,7 +75,7 @@
 						</div>
 						<footer id="footer1">
 							<p>Cleber Matheus Website - 2014</p>
-							<time datetime="2014-01-03" pubdate="pubdate">3 de Janeiro de 2014</time>
+							<time datetime="2014-01-06" pubdate="pubdate">6 de Janeiro de 2014</time>
 							<button onclick="cache()">Atualizar!</button>
 						</footer>
 					</section>
@@ -80,6 +84,11 @@
 		</section>
 		<menu id="menu1" type="context">
 			<menuitem id="sobre1" onclick="about()">Sobre...</menuitem>
+			<menuitem id="asm1" onclick="assembly()">Assembly</menuitem>
+			<menuitem id="c1" onclick="c()">C</menuitem>
+			<menuitem id="cpp1" onclick="cpp()">C++</menuitem>
+			<menuitem id="csharp1" onclick="csharp()">C#</menuitem>
+			<menuitem id="java1" onclick="java()">Java</menuitem>
 		</menu>
 		<script type="text/javascript" async src="/index.js"></script>
 	</body>
