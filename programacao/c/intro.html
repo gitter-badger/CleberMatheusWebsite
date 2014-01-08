@@ -27,7 +27,7 @@
 				<h2>História</h2>
 				<p>O desenvolvimento inicial de C ocorreu no AT&T Bell Labs entre 1969 e 1973. De acordo com Ritchie, o período mais criativo ocorreu em 1972. A linguagem foi chamada "C", porque suas características foram obtidas a partir de uma linguagem anteriormente chamado de "B", que de acordo com a Ken Thompson era versão reduzida da linguagem de programação BCPL.</p>
 				<p>A versão original PDP-11 do sistema Unix foi desenvolvido em assembly. Em 1973, com a adição dos tipos <code>struct</code>, a linguagem C tornou-se poderosa o suficiente para que a maior parte do <i>kernel</i> do Unix fosse reescrito em C. Este foi um dos primeiros núcleos de sistemas operacionais implementadas em uma linguagem diferente da linguagem Assembly. Em 1977, foram feitas novas mudanças por Ritchie e Stephen C. Johnson para facilitar a portabilidade do sistema operacional Unix. O <i>Portable C Compiler' de Johnson serviu de base para várias implementações de C em novas plataformas</i>.</p>
-				<h2>C K&amp;R</h2>
+				<h3>C K&amp;R</h3>
 				<p>A linguagem C não teve sucesso imediato após sua criação e seu uso ficou restrito a alguns laboratórios mas em 1978 Brian Kerningham e Dennis Rithcie lançam o livro <i>The C Programming Language</i>. Que serviu de tutorial e mudou a história da programação em C, de fato essa primeira versão da linguagem é conhecida como "C Kernigham e Ritchie" ou apenas "C K&amp;R".</p>
 				<p>Esse livro, conhecido pelos programadores de C como "K&amp;R", serviu durante muitos anos como uma especificação informal da linguagem. A versão da linguagem C que ele descreve é usualmente referida como "<b>K&amp;R C</b>". A segunda edição do livro cobriu o padrão posterior, o ANSI C. K&amp;R C introduziu as seguintes características na linguagem:</p>
 				<ul style="list-style-type: square;">
@@ -49,6 +49,21 @@
 					<li>Enumerações</li>
 					<li>Cálculos de ponto-flutuante em precisão simples (no K&amp;R C, os cálculos intermediários eram feitos sempre em <code>double</code>, porque era mais eficiente na máquina onde a primeira implementação do C foi feita)</li>
 				</ul>
+				<h3>ANSI C e ISO C</h3>
+				<p>Durante os finais da década de 1970, a linguagem C começou a substituir a linguagem BASIC como a linguagem de programação de microcomputadores mais usada. Durante a década de 1980, foi adaptada para uso no PC IBM, e a sua popularidade começou a aumentar significativamente. Ao mesmo tempo, Bjarne Stroustrup, juntamente com outros nos laboratórios Bell, começou a trabalhar num projecto onde se adicionavam construções de linguagens de programação orientada por objetos à linguagem C. A linguagem que eles produziram, chamada C++, é nos dias de hoje a linguagem de programação de aplicações mais comum no sistema operativo Windows da companhia Microsoft; C permanece mais popular no mundo Unix.</p>
+				<p>Em 1983, o instituto norte-americano de padrões (ANSI) formou um comité, X3J11, para estabelecer uma especificação do padrão da linguagem C. Após um processo longo e árduo, o padrão foi completo em 1989 e ratificado como ANSI X3.159-1989 "Programming Language C". Esta versão da linguagem é frequentemente referida como ANSI C. Em 1990, o padrão ANSI C, após sofrer umas modificações menores, foi adotado pela Organização Internacional para Padronização (ISO) como <b>ISO/IEC 9899:1990</b>, também conhecido como C89 ou C90. Um dos objetivos do processo de padronização ANSI C foi o de produzir um sobre conjunto do K&amp;R C, incorporando muitas das características não-oficiais subsequentemente introduzidas. Entretanto, muitos programas tinham sido escritos e que não compilavam em certas plataformas, ou com um certo compilador, devido ao uso de bibliotecas de funções não-padrão e ao fato de alguns compiladores não aderirem ao ANSI C.</p>
+				<h3>C99</h3>
+				<p>Após o processo da padronização ANSI, as especificações da linguagem C permaneceram relativamente estáticas por algum tempo, enquanto a linguagem C++ continuou a evoluir. (em 1995, a <i>Normative Amendment 1</i> criou uma versão nova da linguagem C mas esta versão raramente é tida em conta.) Contudo, o padrão foi submetido a uma revisão nos finais da década de 1990, levando à publicação da norma <b>ISO 9899:1999</b> em 1999. Este padrão é geralmente referido como "C99". O padrão foi adoptado como um padrão ANSI em março de 2000. As novas características do C99 incluem:</p>
+				<ul style="list-style-type: square;">
+					<li>Funções em linha</li>
+					<li>Remoção de restrições sobre a localização da declaração de variáveis (como em C++)</li>
+					<li>Adição de vários tipos de dados novos, incluindo o <code>long long int</code> (para minimizar problemas na transição de 32-bits para 64-bits), um tipo de dado boolean explicito (chamado <i>_Bool</i>) e um tipo <code>complex</code> que representa números complexos</li>
+					<li>Vetores de dados de comprimento variável (o vetor pode ter um tamanho diferente a cada execução de uma função, mas não cresce depois de criado)</li>
+					<li>Suporte oficial para comentários de uma linha iniciados por //, emprestados da linguagem C++</li>
+					<li>Várias funções de biblioteca novas, tais como <code>snprintf()</code></li>
+					<li>Vários ficheiros-cabeçalho novos, tais como <code>stdint.h</code></li>
+				</ul>
+				<p>O interesse em suportar as características novas de C99 parece depender muito das entidades. Apesar do GCC e vários outros compiladores suportarem grande parte das novas características do C99, os compiladores mantidos pela Microsoft e pela Borland suportam pouquíssimos recursos do C99, e estas duas companhias não parecem estar muito interessadas em adicionar tais funcionalidades, ignorando por completo as normas internacionais. A Microsoft parece preferir dar mais ênfase ao C++.</p>
 				<footer>
 					<p>Baseado no artigo: <a href="http://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">C (linguagem de programação) - Wikipédia, a enciclopédia livre</a></p>
 					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>
