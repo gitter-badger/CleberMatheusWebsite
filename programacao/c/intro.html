@@ -17,18 +17,30 @@
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
-			<h1 style="width: 100%;">C</h1>
+			<h1 style="width: 100%;">Introdução a Linguagem C</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
 		</header>
 		<section id="conteudo" style="width: 100%;">
 			<article id="introC">
-				<header>
-					<h2>Introdução a Linguagem C</h2>
-				</header>
-				<p></p>
+				<p>C é uma linguagem de programação compilada de propósito geral,  estruturada, imperativa, procedural, padronizada pela ISO, criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly). </p>
+				<p>C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.</p>
+				<h2>História</h2>
+				<p>O desenvolvimento inicial de C ocorreu no AT&T Bell Labs entre 1969 e 1973. De acordo com Ritchie, o período mais criativo ocorreu em 1972. A linguagem foi chamada "C", porque suas características foram obtidas a partir de uma linguagem anteriormente chamado de "B", que de acordo com a Ken Thompson era versão reduzida da linguagem de programação BCPL.</p>
+				<p>A versão original PDP-11 do sistema Unix foi desenvolvido em assembly. Em 1973, com a adição dos tipos <code>struct</code>, a linguagem C tornou-se poderosa o suficiente para que a maior parte do <i>kernel</i> do Unix fosse reescrito em C. Este foi um dos primeiros núcleos de sistemas operacionais implementadas em uma linguagem diferente da linguagem Assembly. Em 1977, foram feitas novas mudanças por Ritchie e Stephen C. Johnson para facilitar a portabilidade do sistema operacional Unix. O <i>Portable C Compiler' de Johnson serviu de base para várias implementações de C em novas plataformas</i>.</p>
+				<h2>C K&amp;R</h2>
+				<p>A linguagem C não teve sucesso imediato após sua criação e seu uso ficou restrito a alguns laboratórios mas em 1978 Brian Kerningham e Dennis Rithcie lançam o livro <i>The C Programming Language</i>. Que serviu de tutorial e mudou a história da programação em C, de fato essa primeira versão da linguagem é conhecida como "C Kernigham e Ritchie" ou apenas "C K&amp;R".</p>
+				<p>Esse livro, conhecido pelos programadores de C como "K&amp;R", serviu durante muitos anos como uma especificação informal da linguagem. A versão da linguagem C que ele descreve é usualmente referida como "<b>K&amp;R C</b>". A segunda edição do livro cobriu o padrão posterior, o ANSI C. K&amp;R C introduziu as seguintes características na linguagem:</p>
+				<ul style="list-style-type: auto;">
+					<li>Biblioteca padrão de E/S</li>
+					<li>Tipos de dados <code>struct</code></li>
+					<li>Tipos de dados <code>long int</code></li>
+					<li>Tipos de dados <code>unsigned int</code></li>
+					<li>O operador =+ foi alterado para +=, e =- para -= (o analisador léxico do compilador fazia confusão entre i =+ 10 e i = +10. O mesmo acontecia com =-)</li>
+				</ul>
 				<p></p>
 				<footer>
-					<time datetime="2014-01-06" pubdate="pubdate">Artigo publicado em 6 de Janeiro de 2014</time>
+					<p>Baseado no artigo: <a href="http://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">C (linguagem de programação) - Wikipédia, a enciclopédia livre</a></p>
+					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>
 				</footer>
 			</article>
 		</section>
