@@ -30,14 +30,25 @@
 				<h2>C K&amp;R</h2>
 				<p>A linguagem C não teve sucesso imediato após sua criação e seu uso ficou restrito a alguns laboratórios mas em 1978 Brian Kerningham e Dennis Rithcie lançam o livro <i>The C Programming Language</i>. Que serviu de tutorial e mudou a história da programação em C, de fato essa primeira versão da linguagem é conhecida como "C Kernigham e Ritchie" ou apenas "C K&amp;R".</p>
 				<p>Esse livro, conhecido pelos programadores de C como "K&amp;R", serviu durante muitos anos como uma especificação informal da linguagem. A versão da linguagem C que ele descreve é usualmente referida como "<b>K&amp;R C</b>". A segunda edição do livro cobriu o padrão posterior, o ANSI C. K&amp;R C introduziu as seguintes características na linguagem:</p>
-				<ul style="list-style-type: auto;">
+				<ul style="list-style-type: square;">
 					<li>Biblioteca padrão de E/S</li>
 					<li>Tipos de dados <code>struct</code></li>
 					<li>Tipos de dados <code>long int</code></li>
 					<li>Tipos de dados <code>unsigned int</code></li>
 					<li>O operador =+ foi alterado para +=, e =- para -= (o analisador léxico do compilador fazia confusão entre i =+ 10 e i = +10. O mesmo acontecia com =-)</li>
 				</ul>
-				<p></p>
+				<p>K&amp;R C é frequentemente considerado a parte mais básica da linguagem, cujo suporte deve ser assegurado por um compilador C. Durante muitos anos, mesmo após a introdução do padrão ANSI C, K&amp;R C foi considerado o "menor denominador comum", em que programadores de C se apoiavam quando uma portabilidade máxima era desejada, já que nem todos os compiladores eram actualizados o bastante para suportar o padrão ANSI C.</p>
+				<p>Nos anos que se seguiram à publicação do K&amp;R C, algumas características "não-oficiais" foram adicionadas à linguagem, suportadas por compiladores da AT&amp;T e de outros vendedores. Estas incluíam:</p>
+				<ul style="list-style-type: square;">
+					<li>Funções <code>void</code> e tipos de dados <code>void *</code></li>
+					<li>Funções que retornam tipos <code>struct</code> ou <code>union</code></li>
+					<li>Campos de nome <code>struct</code> num espaço de nome separado para cada tipo <code>struct</code></li>
+					<li>Atribuição a tipos de dados <code>struct</code></li>
+					<li>Qualificadores <code>const</code> para criar um objecto só de leitura</li>
+					<li>Biblioteca padrão, que incorpora grande parte da funcionalidade implementada por vários vendedores</li>
+					<li>Enumerações</li>
+					<li>Cálculos de ponto-flutuante em precisão simples (no K&amp;R C, os cálculos intermediários eram feitos sempre em <code>double</code>, porque era mais eficiente na máquina onde a primeira implementação do C foi feita)</li>
+				</ul>
 				<footer>
 					<p>Baseado no artigo: <a href="http://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">C (linguagem de programação) - Wikipédia, a enciclopédia livre</a></p>
 					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>
