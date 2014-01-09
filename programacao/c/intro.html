@@ -64,6 +64,76 @@
 					<li>Vários ficheiros-cabeçalho novos, tais como <code>stdint.h</code></li>
 				</ul>
 				<p>O interesse em suportar as características novas de C99 parece depender muito das entidades. Apesar do GCC e vários outros compiladores suportarem grande parte das novas características do C99, os compiladores mantidos pela Microsoft e pela Borland suportam pouquíssimos recursos do C99, e estas duas companhias não parecem estar muito interessadas em adicionar tais funcionalidades, ignorando por completo as normas internacionais. A Microsoft parece preferir dar mais ênfase ao C++.</p>
+				<h3>C11</h3>
+				<p>Em 2007, se iniciou o trabalho em antecipação de outra revisão do padrão de C, informalmente chamada de <b>C11</b> ou <b>C1X</b>. O comitê dos padrões de C adotou regras para limitar a inserção de novos recursos que não tenham ainda sido testados por implementações existentes.</p>
+				<p>Em dezembro de 2011 foi publicada a versão estável da especificação, como <b>ISO/IEC 9899:2011</b>.</p>
+				<h2>Visão Geral</h2>
+				<p>C é uma linguagem imperativa e procedural, para implementação de sistemas. Seus pontos de design foram para ele ser compilado, fornecendo acesso de baixo nível à memória e baixos requerimentos do hardware. Também foi desenvolvido para ser uma linguagem de alto nível, para maior reaproveitamento do código. C foi útil para muitas aplicações que foram codificadas originalmente em Assembly.</p>
+				<p>Essa propriedade não foi acidental; a linguagem C foi criada com o objetivo principal em mente: facilitar a criação de programas extensos com menos erros, recorrendo ao paradigma da programação procedural, mas sobrecarregando menos o autor do compilador, cujo trabalho complica-se ao ter de realizar as características complexas da linguagem. Para este fim, a linguagem C possui as seguintes características:</p>
+				<ul style="list-style-type: square;">
+					<li>Uma linguagem extremamente simples, com funcionalidades não-essenciais, tais como funções matemáticas ou manuseamento de ficheiros (arquivos), fornecida por um conjunto de bibliotecas de rotinas padronizada</li>
+					<li>A focalização no paradigma de programação procedural</li>
+					<li>Um sistema de tipos simples que evita várias operações que não fazem sentido</li>
+					<li>Uso de uma linguagem de pré-processamento, o <b>pré-processador de C</b>, para tarefas tais como a definição de macros e a inclusão de múltiplos ficheiros de código fonte</li>
+					<li>Ponteiros dão maior flexibilidade à linguagem</li>
+					<li>Acesso de baixo-nível, através de inclusões de código Assembly no meio do programa C</li>
+					<li>Parâmetros que são sempre passados por valor para as funções e nunca por referência (É possível simular a passagem por referência com o uso de ponteiros)</li>
+					<li>Definição do alcance lexical de variáveis</li>
+					<li>Estruturas de variáveis, (structs), que permitem que dados relacionados sejam combinados e manipulados como um todo</li>
+				</ul>
+				<p>Algumas características úteis, que faltam em C, podem ser encontradas em outras linguagens, que incluem:</p>
+				<ul style="list-style-type: square;">
+					<li>Segurança de tipo</li>
+					<li>Coletor de lixo (mais comum em linguagens interpretadas)</li>
+					<li>Vetores que crescem automaticamente</li>
+					<li>Classes ou objetos com comportamento</li>
+					<li>Clausuras</li>
+					<li>funções aninhadas</li>
+					<li>Sobrecarga de operadores</li>
+					<li>Meta-programação</li>
+					<li>Apoio nativo de <i>multithreading</i> e comunicação por rede</li>
+				</ul>
+				<p>Apesar da lista de características úteis que C possui não ser longa, isso não tem sido um impedimento à sua aceitação, pois isso permite que novos compiladores de C sejam escritos rapidamente para novas plataformas, e também permite que o programador permaneça sempre em controle do que o programa está a fazer. Isto é o que por várias vezes permite o código de C correr de uma forma mais eficiente que muitas outras linguagens. Tipicamente, só código de Assembly "afinado à mão" é que corre mais rapidamente, pois possui um controle completo da máquina, mas avanços na área de compiladores juntamente com uma nova complexidade nos processadores modernos permitiram que a diferença tenha sido rapidamente eliminada. Uma consequência da aceitação geral da linguagem C é que frequentemente os compiladores, bibliotecas e até intérpretes de outras linguagens de nível maior sejam eles próprios implementados em C.</p>
+				<p>C tem como ponto forte, a sua eficiência, e é a linguagem de programação preferida para o desenvolvimento de sistemas e softwares de base, apesar de também ser usada para desenvolver programas de computador. É também muito usada no ensino de ciência da computação, mesmo não tendo sido projetada para estudantes e apresentando algumas dificuldades no seu uso. Outra característica importante de C, é sua proximidade do código de máquina, que permite que um projetista seja capaz de fazer algumas previsões de como o software irá se comportar, ao ser executado.</p>
+				<p>C tem como ponto fraco, a falta de proteção que dá ao programador. Praticamente tudo que se expressa em um programa em C, pode ser executado, como por exemplo, pedir o vigésimo membro de um vetor com apenas dez membros. Os resultados são muitas vezes totalmente inesperados, e os erros, difíceis de encontrar.</p>
+				<h3>Tipos de Dados</h3>
+				<p>C tem um sistema de tipos semelhante ao de alguns descendentes da linguagem ALGOL, tais como Pascal. Possui tipos para números inteiros de vários tamanhos com e sem sinal, números de ponto flutuante, caracteres e estruturas (<code>structs</code>). C usa extensivamente ponteiros, um tipo muito simples de <b>referência</b> que guarda o endereço de memória da variável. O ponteiro pode ser <i>desreferenciado</i>, uma operação que busca o objecto que se encontra na morada da memória que o ponteiro possui, morada essa que pode ser manipulada através de aritmética de ponteiros. Durante o tempo de execução, o ponteiro é simplesmente uma morada de máquina tais como aquelas manipuladas em <i>Assembly</i>, mas em tempo de compilação possui um tipo complexo que indica o tipo do objecto para onde ele aponta, permitindo que se verifique o tipo de expressões, incluindo ponteiros. Os ponteiros são usados extensivamente em C. O tipo linha de texto de C é simplesmente um ponteiro para um vetor de caracteres e alocação dinâmica de memória, descrita abaixo, é efetuada através de ponteiros.</p>
+				<p>Os ponteiros em C possuem um valor reservado especial, <code>NULL</code>, que indica que não estão a apontar para uma morada. O uso desse valor como morada é muito útil na construção de várias estruturas de dados, mas causa comportamento não-definido (possivelmente uma falha de sistema) ao ser desreferenciado. Um ponteiro que possui o valor <code>NULL</code> é chamado <i>ponteiro nulo</i>. Os ponteiros são declarados (e desreferenciados) com um * (asterisco), portanto o tipo <code><i>int*</i></code> denota um ponteiro para número(s) inteiro(s). A linguagem C também fornece um tipo especial de ponteiros, o <code><i>void*</i></code>, que se traduz num ponteiro que aponta para um objecto de tipo desconhecido.</p>
+				<p>A linguagem C também tem apoio a nível de linguagem para vetores estáticas (de dimensão fixa) de tipos. As disposições de tipos podem parecer ter mais que uma dimensão apesar de serem tecnicamente disposições de disposições de tipos. Em memória, tais estruturas são posicionadas com as linhas uma depois da outra (a alternativa seria armazenar os dados em colunas, usado em outras linguagens). O acesso a disposições de tipos é feito através de ponteiros e aritmética de ponteiros; o nome da disposição é tratado como se fosse um ponteiro que aponta para o início da disposição. Em certas aplicações não é razoável usarem-se disposições de tipos de dimensão fixa e por isso a alocação dinâmica de memória pode ser usada para criar disposições de tipos de dimensão variável.</p>
+				<p>Como a linguagem C é regularmente usada em programação de baixo-nível de sistemas, há casos em que é necessário tratar um número inteiro como sendo um ponteiro, um número de ponto flutuante como sendo um número inteiro ou um tipo de ponteiro como sendo outro. Para estes casos, a linguagem C fornece a capacidade de "moldagem" (também denominado "conversão de tipo" ou casting), uma operação que, caso seja possível, força a conversão de um objecto de um tipo para outro. Apesar de ser por vezes necessário, o uso de conversões de tipo sacrifica alguma segurança oferecida pelo sistema de tipos.</p>
+				<h4>int</h4>
+				<p>O tipo de dado <b>int</b> (inteiro) serve para armazenar valores numéricos inteiros. Existem vários tipos de inteiros, cada um de um tamanho diferente (dependendo do sistema operacional e/ou arquitetura do processador):</p>
+				<ul style="list-style-type: square;">
+					<li><code>int</code>, pode possuir 16 bits, 32 bits ou 64 bits</li>
+					<li><code>short int</code>, deve possuir tamanho de no mínimo 16 bits e não pode ser maior que <code>int</code></li>
+					<li><code>long int</code>, deve possuir tamanho mínimo de 32 bits</li>
+					<li><code>long long int</code>, deve possuir tamanho mínimo de 64 bits</li>
+				</ul>
+				<p>Todos estes tipos de inteiros podem ainda ser declarados precedidos da cláusula <code>unsigned</code>, o que faz com que só suporte números positivos. Isto faz com que, com o mesmo tamanho, uma variável suporte mais números positivos do que um <code>signed</code> (todos os inteiros são signed por omissão).</p>
+				<h4>char</h4>
+				<p>O tipo <b>char</b> ocupa 1 byte, e serve para armazenar caracteres ou inteiros. Isso significa que o programa reserva um espaço de 8 bits na memória RAM ou em registradores do processador para armazenar um valor (<b>char</b> de tamanho maior que 8 bits é permitido pela linguagem, mas os casos são raros). Com vetores do tipo char é possível criar cadeias de caracteres (strings).</p>
+				<h4>float</h4>
+				<p>O tipo de dado <b>float</b> serve para armazenar números de ponto flutuante, ou seja, com casas decimais. O padrão mais utilizado nos últimos 10 anos é o IEEE 754-1985.</p>
+				<h4>double</h4>
+				<p>O tipo de dado <b>double</b> serve para armazenar números de ponto flutuante de dupla precisão, normalmente tem o dobro do tamanho do float e portanto o dobro da capacidade. O padrão mais adotado também é o IEEE 754-1985.</p>
+				<h4>struct</h4>
+				<p>Em C podem ser usadas estruturas (chamados de registos em outras linguagens de programação). As estruturas são grupos de variáveis organizadas arbitrariamente pelo programador. Uma estrutura pode criar um novo tipo de variável caso typedef seja usado em sua declaração.</p>
+				<h2>Relações com C++</h2>
+				<p>A linguagem de programação C++ foi originalmente derivada do C para suportar programação orientada a objetos. À medida que as linguagens C e C++ foram evoluindo independentemente, a divisão entre as duas veio a aumentar. O padrão C99 criou um número de características que entram em conflito. Hoje, as principais diferenças entre as duas linguagens são:</p>
+				<ul style="list-style-type: square;">
+					<li><code>inline</code> - em C++, funções em linha encontram-se no espaço global enquanto que em C encontram-se no espaço local. Por outras palavras, isso significa que, em C++, qualquer definição de qualquer função em linha (sem ser a respeito da sobrecarga de funções de C++) tem de estar em conformidade com a "regra de uma definição" da linguagem C++. Mas em C, a mesma função em linha pode ser definida de maneira diferente em diferentes arquivos (ou ficheiros)</li>
+					<li>A palavra-chave <code>bool</code>, igual à usada em C++, em C99 necessita que se inclua o arquivo-cabeçalho <code>&lt;stdbool.h&gt;</code> (_Bool está sempre disponível). Padrões anteriores de C não definiam um tipo booleano e vários (e incompatíveis) métodos foram usados para simular um tipo booleano</li>
+				</ul>
+				<p>Algumas características originalmente desenvolvidas em C++ também apareceram em C. Entre elas encontram-se:</p>
+				<ul style="list-style-type: square;">
+					<li>protótipos de função (com declaração de tipos de parâmetros) e remoção do "int" implícito</li>
+					<li>comentários de linha, indicados por //; comentários de linha terminam com um caractere de nova-linha</li>
+					<li>a palavra-chave <code>inline</code></li>
+					<li>tipagem mais forte</li>
+				</ul>
+				<h2>Exemplos</h2>
+				<h3>Programa Olá Mundo</h3>
+				<p>A seguinte aplicação foi publicada na primeira edição de C de K&amp;R, e tornou-se no programa de introdução padrão da maior parte dos livros sobre C. O programa envia o texto "Olá, Mundo!" para a saída padrão, que é normalmente o console, mas que também pode ser um ficheiro (ou arquivo), um outro dispositivo qualquer, ou até mesmo um <i>bit bucket</i>, dependendo de como a saída-padrão é mapeada na altura em que o programa é executado.</p>
 				<footer>
 					<p>Baseado no artigo: <a href="http://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">C (linguagem de programação) - Wikipédia, a enciclopédia livre</a></p>
 					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>
