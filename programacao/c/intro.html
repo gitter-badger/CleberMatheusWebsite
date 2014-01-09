@@ -134,6 +134,18 @@
 				<h2>Exemplos</h2>
 				<h3>Programa Olá Mundo</h3>
 				<p>A seguinte aplicação foi publicada na primeira edição de C de K&amp;R, e tornou-se no programa de introdução padrão da maior parte dos livros sobre C. O programa envia o texto "Olá, Mundo!" para a saída padrão, que é normalmente o console, mas que também pode ser um ficheiro (ou arquivo), um outro dispositivo qualquer, ou até mesmo um <i>bit bucket</i>, dependendo de como a saída-padrão é mapeada na altura em que o programa é executado.</p>
+				<pre>
+				int main(){
+					printf("Olá, Mundo!\r\n");
+				}</pre>
+				<p>Apesar do programa acima correr corretamente, atualmente origina algumas mensagens de aviso quando compilado como C ANSI. Essas mensagens podem ser eliminadas efetuando umas pequenas alterações no programa original:</p>
+				<pre>#include &lt;stdio.h&gt; /* Pacotes com funções de entrada e saída */
+				
+				int main(){
+					printf("Olá, Mundo!\r\n");
+					return 0;	/* Retorna 0, pois `main` retorna um `int` */
+				}
+				/* Nova linha após fechar a chave principal */</pre>
 				<footer>
 					<p>Baseado no artigo: <a href="http://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">C (linguagem de programação) - Wikipédia, a enciclopédia livre</a></p>
 					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>
