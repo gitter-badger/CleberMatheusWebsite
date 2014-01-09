@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" manifest="/clebermatheus.appcache">
+	<head>
+		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<meta charset="UTF-8"/>
+		<title>Introdução a C++</title>
+		<link rel="stylesheet" href="/index.css"/>
+		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="author" content="Cleber Matheus"/>
+		<link rel="shortcut icon" href="favicon.png"/>
+		<meta name="description" content="Introdução a Linguagem C++"/>
+		<meta name="reply-to" content="clebermatheus@outlook.com"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
+		<meta name="keywords" content="Introdução a C++, intro c++, Introdutcion to C++, intro cpp"/>
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website FeedRSS"/>
+	</head>
+	<body onload="cache()" contextmenu="menu1">
+		<header>
+			<h1 style="width: 100%;">Introdução a C++</h1>
+			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+		</header>
+		<section id="conteudo" style="width: 100%;">
+			<article>
+				<h2>Introdução</h2>
+				<p>No mundo da programação nós podemos classificar as linguagens de duas maneiras: Linguagem de Baixo Nível e Linguagem de Alto Nível. Quando nos referimos à linguagem de Baixo Nível estamos nos referindo a sintaxes próximas ao código de maquina, ou seja, a linguagem que o computador consegue facilmente interpretar. Em contrapartida a definição de linguagem de Baixo Nível nós encontramos as linguagem de Alto Nível, com relação a esse tipo de linguagem podemos afirmar que a mesma possui uma sintaxe próxima à linguagem humana um exemplo desse tipo de linguagem é o próprio C/C++, ente outras.</p>
+				<p>O C++ foi inicialmente desenvolvido por Bjarne Stroustrup dos Bell Labs durante a década de 1980 (originalmente com o nome C with Classes, como um adicional à linguagem C) com o objectivo de melhorar a linguagem de programação C ainda que mantendo máxima compatibilidade. Em 1983 o nome da linguagem foi alterado de C with Classes para C++, novas características foram adicionadas, como funções virtuais, sobrecarga de operadores e funções, referências, constantes, gerenciamento manual de memória, melhorias na verificação de tipo de dado e estilo de comentário de código de uma linha (//).</p>
+				<p>Stroustrup percebeu que a linguagem simula possuía características muito úteis para o desenvolvimento de software, mas era muito lenta para uso prático. Por outro lado, a linguagem BCPL era rápida, mas possuía muito baixo nível, dificultando sua utilização em desenvolvimento de aplicações. Durante seu período na Bell Labs, ele enfrentou o problema de analisar o kernel do Unix com respeito à computação distribuída. A partir de sua experiência de Doutorado, começou a acrescentar elementos do simula no C. O C foi escolhido como base de desenvolvimento da nova linguagem, pois possuía uma proposta de uso genérico, era rápido e também portável para diversas plataformas. Algumas outras linguagens que também serviram de inspiração para o cientista da computação foram Algol 68, Ada, Clu e Ml. Em 1985 foi lançada a primeira edição do livro The C++ Programming Language, contendo referências para a utilização da linguagem, já que ainda não era uma norma oficial. A primeira versão comercial foi lançada em outubro do mesmo ano. Em 1989 a segunda versão foi lançada, contendo novas características como herança múltipla, classes abstratas, métodos estáticos, métodos constantes e membros protegidos, incrementando o suporte a orientação a objeto. Em 1990 foi lançado o livro The Annotated C++ Reference Manual, que se tornou base para o futuro padrão. Outras adições na linguagem incluem Templates, tratamento de exceções, espaço de nomes, conversão segura de tipo de dado e o tipo Booleano.</p>
+				<p>Um fator extremamente importante para as pessoas que estão conhecendo a linguagem de programação C++ é afirmar que é mesma é case sensitive, ou seja, ao programar nesse tipo linguagem as pessoas devem tomar muito cuidado ao declarar variáveis ou fazer o uso de determinados métodos, pois ao se declarar uma variável chamada conta e outra chamada cONta (note as letras maiúsculas), nesse caso o compilador entenderá que isso são variáveis distintas e provavelmente ocorrera algo completamente diferente do resultado esperado. O mesmo vale ressaltar sobre o uso da estrutura de seleção if (se) e else (senão), a declaração das mesmas devem ser sempre minúsculas, caso o programador defina as mesmas com letras maiúsculas o compilador entenderá que a declaração corresponde a uma variável.</p>
+				<p>Após a padronização ISO realizada em 1998 e a posterior revisão realizada em 2003, uma nova versão da especificação da linguagem foi lançada em setembro de 2011, conhecida informalmente como C++11 ou C++0x. Este novo padrão incluirá muitas adições ao núcleo da linguagem (sua implementação principal), e estenderá a biblioteca padrão do C++, incluindo a maior parte da biblioteca do chamado C++ Technical Report 1 — um documento que propõe mudanças ao C++ — com exceção das funções matemáticas específicas.</p>
+				<h2>Ambiente de Linguagem</h2>
+				<p>O C++ pode ser chamado de linguagem compilada, ou seja, além de escrever o código, é necessário um outro software que possa entender esse código e traduzí-lo para uma sintaxe que o computador possa interpretar denominado Código de Máquina.</p>
+				<p>É necessário um editor de texto puro (como o Bloco de Notas) e um compilador para o desenvolvimento de aplicativos na linguagem C++, nesse caso quando o programador digitar o código-fonte o mesmo deve ser salvo com a extensão .CPP ao invés de .TXT, em seguida o índividuo deve abrir o prompt digitar o comando de compilação do compilador instalado (por exemplo no compilador Borland C++Builder 3.0 o respectivo comando de compilação é bcc32) seguido pelo nome do arquivo salvo.CPP, ou então o programador pode optar por utilizar um Ambiente de Desenvolvimento Integrado (IDE - Integrated Development Environment) para otimizar o desenvolvimento de suas aplicações.</p>
+				<h2>Instalação</h2>
+				<p>A primeira coisa a fazer antes de desenvolver programas usando a linguagem C++ é instalar um compilador. Existem diversos compiladores C++ disponíveis para os programadores, a decisão sobre qual compilador utilizar pode ser baseada em vários fatores:</p>
+				<ul style="list-style-type: square;">
+					<li>qualidade do compilador (rapidez, está conforme com a padronização da linguagem, a interface com o usuário é agradável, possui ou não um IDE (Integrated Development Enviroment), possui diversas opções de compilação);</li>
+					<li>sistema(s) operacional(is) que o compilador funciona (e gera códigos);</li>
+					<li>custo do compilador;</li>
+					<li>documentação disponível e suporte.</li>
+				</ul>
+				<footer>
+					<p>Artigo Original: <a href="">Introdução as Linguagens de Programação/C e C++ - Wikiversidade</a></p>
+					<time datetime="2014-01-09" pubdate="pubdate">Publicado em 9 de Janeiro de 2014</time>
+				</footer>
+			</article>
+		</section>
+		<section id="HoverMenu" onclick="HMenu()">
+			<nav id="nav1">
+				<ul id="MPr">
+					<h2>Menu</h2>
+					<li><a href="/">Página Inicial</a></li>
+					<li><a href="/app/">Aplicativos</a></li>
+					<li><a href="/games/">Jogos</a></li>
+					<li><a href="/projetos/">Meus Projetos</a></li>
+					<li><a href="/opensource/">OpenSource</a></li>
+					<li><a href="/programacao/">Programação</a></li>
+					<li><a href="/sobre/">Sobre</a></li>
+					<li><a href="/support/">Suporte</a></li>
+					<li><a href="/videos/">Vídeos</a></li>
+					<li><a href="/webdesign/">WebDesign</a></li>
+					<li><a href="/rss.xml">Feed RSS</a></li>
+				</ul>
+			</nav>
+			<section id="MenuTab">
+				<section id="Tabs">
+					<span id="Tab0" class="active" onclick="ChangeTab('Tab', 0)">Linguagens</span>
+					<span id="Tab1" class="inactive" onclick="ChangeTab('Tab', 1)">Extras</span>
+				</section>
+				<section id="Content">
+					<section id="ConTab0" class="active">
+						<a href="/programacao/assembly/"><img src="/programacao/assembly/favicon.png" alt="Assembly"/><span>Assembly</span></a>
+						<a href="/programacao/c/" style="left: 10px;"><img src="/programacao/c/favicon.png" alt="C"/><span>C</span></a>
+						<a href="/programacao/cpp/" style="left: 20px;"><img src="/programacao/cpp/favicon.png" alt="C++"/><span>C++</span></a>
+						<a href="/programacao/csharp/" style="left: 30px;"><img src="/programacao/csharp/favicon.png" alt="C#"/><span>C#</span></a>
+						<a href="/programacao/java/" style="left: 40px;"><img src="/programacao/java/favicon.png" alt="Java"/><span>Java</span></a>
+					</section>
+					<section id="ConTab1" class="inactive">
+						<div id="ads">
+							<script type="text/javascript">
+								bb_bid = "1677784";
+								bb_lang = "pt-BR";
+								bb_name = "custom";
+								bb_limit = "4";
+								bb_format = "bbk";
+							</script>
+							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+						</div>
+						<footer id="footer1">
+							<p>Cleber Matheus Website - 2014</p>
+							<time datetime="2014-01-09" pubdate="pubdate">9 de Janeiro de 2014</time>
+							<button onclick="cache()">Atualizar!</button>
+						</footer>
+					</section>
+				</section>
+			</section>
+		</section>
+		<menu id="menu1" type="context">
+			<menuitem id="sobre1" onclick="about()">Sobre...</menuitem>
+			<menuitem id="asm1" onclick="assembly()">Assembly</menuitem>
+			<menuitem id="c1" onclick="c()">C</menuitem>
+			<menuitem id="cpp1" onclick="cpp()">C++</menuitem>
+			<menuitem id="csharp1" onclick="csharp()">C#</menuitem>
+			<menuitem id="java1" onclick="java()">Java</menuitem>
+		</menu>
+		<script type="text/javascript" async src="/index.js"></script>
+	</body>
+</html>
