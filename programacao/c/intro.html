@@ -134,23 +134,97 @@
 				<h2>Exemplos</h2>
 				<h3>Programa Olá Mundo</h3>
 				<p>A seguinte aplicação foi publicada na primeira edição de C de K&amp;R, e tornou-se no programa de introdução padrão da maior parte dos livros sobre C. O programa envia o texto "Olá, Mundo!" para a saída padrão, que é normalmente o console, mas que também pode ser um ficheiro (ou arquivo), um outro dispositivo qualquer, ou até mesmo um <i>bit bucket</i>, dependendo de como a saída-padrão é mapeada na altura em que o programa é executado.</p>
-				<pre>
-				int main(){
-					printf("Olá, Mundo!\r\n");
-				}</pre>
+				<pre>int main(){
+	puts("Olá, Mundo!");
+}</pre>
 				<p>Apesar do programa acima correr corretamente, atualmente origina algumas mensagens de aviso quando compilado como C ANSI. Essas mensagens podem ser eliminadas efetuando umas pequenas alterações no programa original:</p>
-				<pre>
-				#include &lt;stdio.h&gt; /* Pacotes com funções de entrada e saída */
-				
-				int main(){
-					printf("Olá, Mundo!\r\n");
-					return 0;	/* Retorna 0, pois `main` retorna um `int` */
-				}
-				/* Nova linha após fechar a chave principal */</pre>
+				<pre>#include &lt;stdio.h> /* Pacotes com funções de entrada e saída */
+
+int main(){
+	puts("Olá, Mundo!");
+	return 0;	/* Retorna 0, pois `main` retorna um `int` */
+}
+/* Nova linha após fechar a chave principal */</pre>
 				<p>A primeira linha do programa é uma diretiva de pré-processamento <code>#include</code>, que causa com que o pré-processador substitua aquela linha pela totalidade do conteúdo do arquivo qual diretiva se refere. Neste caso o arquivo padrão <code>stdio.h</code> (que contém protótipos de funções para trabalho com entrada e saída) irá substituir a linha. Os caracteres &lt; e &gt; indicam que o arquivo stdio.h encontra-se no local em que, quando da configuração do compilador, se definiu como padrão para localização dos ficheiros de inclusão (<i>header files</i>, geralmente com a extensão <i>.h</i>).</p>
 				<p>A linha (não-vazia) seguinte indica que uma função denominada <i>main</i> será definida. A função <i>main</i> tem um significado especial nos programas em C, pois é a função que é inicialmente executada (em inglês, <i>entry point</i>). Os caracteres { e } delimitam a extensão da função. O termo <code>int</code> define a função <i>main</i> como sendo uma função que retorna um número inteiro. O termo <code>void</code> indica que a função não aceita parâmetros. A função <i>main</i>, normalmente aceita parâmetros, que são passado pela linha de comando. Os compiladores e sistemas operacionais atuais reconhecem as seguintes declarações de main:</p>
-				<pre>
-				</pre>
+				<pre>int main(void);
+int main(int argc, char *argv[]);
+int main(int argc, char **argv);</pre>
+				<p>A linha seguinte "chama", ou executa uma função chamada <code>puts</code>; o arquivo incluído, <code>stdio.h</code>, contém a informação que descreve a forma como a função <code>puts</code> deve ser chamada. Nesta chamada, é passado à função <code>printf</code> um único argumento, a linha de texto constante "Olá, Mundo!". A função <code>puts</code> retorna um valor, um <code>int</code>, mas como não é usado, é descartado pelo compilador. O comando <code>return</code> retorna o valor 0 para o sistema, que é interpretado pelo mesmo como que a função main() foi executada e encerrada com sucesso (sem erros). Por fim, o caracter } indica o fim da função <code>main</code>. Note-se que texto rodeado por /* e */ (comentários de texto) é ignorado pelo compilador. Os compiladores que obedecem à norma C99 também aceitam como comentários as linhas de texto que são precedidos por //.</p>
+				<h3>Matemática</h3>
+				<p>O seguinte código realiza seis operações matemáticas, adição, subtração, multiplicação, divisão, exponenciação e radiciação, e em seguida envia os seus respectivos resultados para a saída padrão (normalmente o console).</p>
+				<pre>#include &lt;math.h>  // necessária para pow() e sqrt()
+#include &lt;stdio.h> // necessária para printf() e getchar()
+ 
+int main(){
+   int a = 2, b = 3;
+ 
+   printf("%d + %d = %d\n", a, b, a + b);
+   printf("%d - %d = %d\n", a, b, a - b);
+   printf("%d x %d = %d\n", a, b, a * b);
+   printf("%d / %d = %0.1f\n", a, b, (float) a / b); // resultado fracionário
+   printf("%d elevado a %d = %0.1f\n", a, b, pow(a, b)); // pow(base, expoente)
+   printf("raiz quadrada de %d = %0.1f\n", a, sqrt(a));
+ 
+   getchar(); //O uso dessa função é necessária apenas nos sistemas Windows, para manter o terminal (Prompt de comando) aberto
+   return 0;
+}</pre>
+				<h3>Estruturas de Dados</h3>
+				<p>No exemplo seguinte, é criada uma estrutura composta por 3 elementos de tipos diferentes. Após ser declarada uma variável "x" do tipo struct "y", onde "y" é o nome da estrutura, para se acessar os elementos usa-se a seguinte sintaxe: <code>x.elemento</code>.</p>
+				<pre>#include &lt;stdio.h>
+ 
+struct Pessoa {
+   char nome[64]; // vetor de 64 chars para o nome
+   unsigned short int idade;
+   char rg[13];
+};
+ 
+int main(){
+   struct Pessoa exemplo = {"Fulano", 16, "00.000.000-00"}; // declaração da variável "exemplo"
+ 
+   printf("Nome: %s\n", exemplo.nome);
+   printf("Idade: %hu\n", exemplo.idade);
+   printf("RG: %s\n", exemplo.rg);
+ 
+   getchar(); // desnecessário, mas comumente utilizado em ambientes windows para "segurar" o terminal aberto
+   return 0;
+}</pre>
+				<p>Ou, equivalente:</p>
+				<pre>#include &lt;stdio.h>
+ 
+typedef struct Pessoa {
+   char nome[64]; // vetor de 64 chars para o nome
+   unsigned short int idade;
+   char rg[13];
+} Pessoa;
+ 
+int main(){
+   Pessoa exemplo = {"Felipe", 16, "00.000.000-00"}; // declaração da variável "exemplo"
+ 
+   printf("Nome: %s\n", exemplo.nome);
+   printf("Idade: %hu\n", exemplo.idade);
+   printf("RG: %s\n", exemplo.rg);
+ 
+   getchar();
+   return 0;
+}</pre>
+				<h2>Baixo-nível</h2>
+				<p>O exemplo que se segue apresenta código C de baixo-nível, as funções read e write. Neste programa vamos ler de N para buf, blocos de bufsize neste caso 1024, para O. Quando n for igual a 0, é porque a leitura acabou, sai do ciclo while e libera a memória ocupada por buf.</p>
+				<pre>#include &lt;unistd.h>
+#define bufsize 1024;
+ 
+int main(void){
+  int N,n,O;
+  char *buf;
+ 
+  buf = (char*) malloc (bufsize);
+ 
+  while(n=read(N, buf, bufsize))
+        write(O, buf,n)
+  free(buf);
+ 
+  return 0;
+}</pre>
 				<footer>
 					<p>Baseado no artigo: <a href="http://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)">C (linguagem de programação) - Wikipédia, a enciclopédia livre</a></p>
 					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>

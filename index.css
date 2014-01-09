@@ -240,3 +240,6 @@ section.AbaBody .TabBodyInline{
 #bc2{
 	background-color: #FFFD0A;
 }
+pre{
+	border: solid white;
+}
