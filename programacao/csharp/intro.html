@@ -17,7 +17,7 @@
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
-			<h1 style="width: 100%;">Introdução à linguagem C#</h1>
+			<h1>Introdução à linguagem C#</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
 		</header>
 		<section id="conteudo" style="width: 100%;">
@@ -31,6 +31,23 @@
 				<p>Como C# é uma linguagem orientada a objetos, ela suporta conceitos como encapsulamento, herança e polimorfismo. Todas suas variáveis e métodos são encapsulados dentro das definições de uma classe. Ela é usada na maioria das classes do .NET framework. Foi a primeira linguagem orientada a componentes da família C/C++, segue os padrões POO, onde tudo deriva de um ancestral comum, no caso de C# é System.Object.</p>
 				<p>É fortemente tipada, possui suporte a DLL's, COM e COM+, é case-sensitive e suas classes podem implementar várias interfaces, mas a herança por extensão é simples. Seus programas executam sobre um ambiente gerenciável, ficando a cargo do .NET framework realizar o controle de memória. Possui a Language Integrated Query (LINQ), que fornece recursos de consulta interna entre uma variedade de fontes de dados.</p>
 				<p>Métodos e tipos não precisam ser declarados em ordem, um arquivo C# pode conter inúmeras classes, estruturas e interfaces. As inovações do C# permitem escrita de aplicativos de maneira rápida, mantendo a expressividade e elegância das linguagens C-Style. Permite aos seus desenvolvedores criarem uma infinidade de aplicativos compatíveis com o .NET framework, como por exemplo aplicações tradicionais do Windows, web services, componentes distribuídos, aplicativos cliente-servidor e aplicativos com integração de banco de dados, entre outros tipos.</p>
+				<h2>Novidades da versão 5.0</h2>
+				<p>As maiores novidades da versão 5.0 da linguagem ficam por conta do uso de AsyncFeaturee Caller Info. O AsyncFeature introduz duas novas palavras chaves :async e await. O uso de chamadas assíncronas já era possível anteriormente, mas foi simplificado dentro da nova versão. O recurso de chamadas para métodos assíncronos pode ser muito utilizado em aplicativos que queiram ser mais atrativos e não queiram bloquear o usuário enquanto um processo está sendo executado. Por exemplo, ao executar uma determinada ação como um envio de e-mails para clientes cadastrados, o usuário não deseja esperar que todos os e-mails sejam enviados para ele poder continuar usando o sistema. Esse envio deve ser feito em segundo plano, não bloqueando a interação do usuário com o sistema enquanto os e-mails são enviados.</p>
+				<p>Geralmente um método que é modificado para ser assíncrono contém ao menos um modificador await correspondente. O método irá funcionar de maneira síncrona até o primeiro await ser encontrado, nessa altura ele é suspenso até a tarefa estar completa, enquanto isso, a execução é retornada ao chamador do método. Se o método não tiver um método await correspondente ele é executado de forma síncrona. Um aviso é emitido pelo compilador alertando sobre qualquer método assíncrono que não contenha um await correspondente.</p>
+				<p>Os retornos de métodos assíncronos podem ser do tipo Task, Task&lt;TResult> ou void. O tipo Task&lt;TResult> é usado como retorno quando o método tem um tipo a ser retornado. Por exemplo, se o método irá retornar um tipo int e necessita ser assíncrono, o retorno do método será Task&lt;int>, se for retornado um String o retorno será Task&lt;String>. Já o uso de Task é para situações onde nenhum valor significativo é retornado quando o método termina de executar todas as suas instruções, ou seja, a chamada do método retorna um Task, mas quando Task está finalizada qualquer await que estiver aguardando o retorno do método irá igualá-lo a void.</p>
+				<p>O tipo void é usado principalmente para definir manipuladores de eventos, onde um void é necessário. O chamador de um método assíncrono com retorno void, não pode capturar exceções que o método por ventura venha a lançar.</p>
+				<p>Outra novidade é o CallerInformation, que pode ajudar na depuração e criação de ferramentas para diagnóstico, ajudando a evitar código duplicado em invocação de métodos, como também em logs. Foi criado especificamente para decorar parâmetros opcionais de um método, que podem então serem usados em tempo de execução pelo .NET, para injetar informações ao chamador. Algumas das vantagens do uso do Caller Info são:</p>
+				<ul style="list-style-type: square;">
+					<li>O chamador não precisa fazer nada explicitamente, se é preciso criar um componente que irá ser usado em uma aplicação cliente, não é necessário se preocupar com o chamador passando informações explicitamente, ele sempre irá capturar isso pelo Caller Info.</li>
+					<li>Não é necessário usar explicitamente System.Reflection.</li>
+					<li>Esses atributos serão muito úteis para a implementação do servidor.</li>
+				</ul>
+				<p>Existem três tipos de CallerInformation no C# 5.0, são eles:</p>
+				<ul style="list-style-type: square;">
+					<li>CallerFilePath, que proverá o caminho para o arquivo a partir de onde o método é chamado;</li>
+					<li>CallerLineNumber, irá prover o número da linha de onde a chamada é feita;</li>
+					<li>CallerMemberName, que irá prover o nome do método que está fazendo a chamada.</li>
+				</ul>
 				<footer>
 					<p>Artigo Original: <a href="http://www.devmedia.com.br/introducao-a-linguagem-c/27711">Introdução à linguagem C#</a></p>
 					<time datetime="2014-01-10" pubdate="pubdate">Artigo Publicado em 10 de Janeiro de 2014</time>
