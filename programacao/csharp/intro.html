@@ -48,6 +48,32 @@
 					<li>CallerLineNumber, irá prover o número da linha de onde a chamada é feita;</li>
 					<li>CallerMemberName, que irá prover o nome do método que está fazendo a chamada.</li>
 				</ul>
+				<h3>Utilizando Caller Info</h3>
+				<p>Na <b>Listagem 1</b> é mostrado o exemplo de código com as chamadas aos Caller Info para mostrar uma informação mais detalhada no log do projeto.</p>
+				<p><b>Listagem 1:</b> Exemplo de código com uso de Caller Info</p>
+				<pre>class Program{
+	static void diga_mensagem(string msg, [CallerMemberName] string memberName = "", [CallerFilePath] string sourceFilePath = "", 
+	[CallerLineNumber] int sourceLineNumber = 0){
+		Console.WriteLine("Sua mensagem foi > " + msg); 
+		Trace.WriteLine("memberName : " + memberName); 
+		Trace.WriteLine("sourceFilePath : " + sourceFilePath); 
+		Trace.WriteLine("sourceLineNumber : " + sourceLineNumber); 
+		Console.ReadKey();
+	}
+	static void Main(string[] args){
+		Console.WriteLine("Diga sua mensagem : ");
+		string msg = Console.ReadLine();
+		diga_mensagem(msg);
+	}
+}</pre>
+				<p>Na declaração do método <b>diga_mensagem()</b>, são declarados quatro argumentos. Um é referente ao parâmetro que será capturado pela informação digitada pelo usuário, os outros três são argumentos para o uso dos Callers Info e irão exibir mensagens no log da aplicação. Na <b>Figura 1</b> é visualizado o resultado da execução de aplicação.</p>
+				<img src="http://arquivo.devmedia.com.br/artigos/EvertonFoz/C_Sharp/C_Sharp_1.jpg" alt="Execução da Aplicação"/>
+				<p><b>Figura 1:</b> Execução da aplicação</p>
+				<p>Na <b>Figura 2</b> são exibidas as informações que foram capturadas pelos Caller Info que foram passados como argumentos na chamada do método.</p>
+				<img src="http://arquivo.devmedia.com.br/artigos/EvertonFoz/C_Sharp/C_Sharp_2.jpg" alt="Resultado do uso de Caller Info"/>
+				<p><b>Figura 2:</b> Resultado do uso de Caller Info</p>
+				<h2>Conclusão</h2>
+				<p>A linguagem C# é uma linguagem que visa facilitar muito o desenvolvimento, e possui uma vasta gama de recursos que podem proporcionar uma grande produtividade para desenvolvedores que a utilizam. Além dos recursos como sua sintaxe e programação orientada a objetos, que fazem dela uma linguagem poderosa para se trabalhar. Aliada ao uso do framework .NET, é possível criar diversos tipos de aplicações,e ainda ter um ambiente onde o desenvolvedor pode focar na sua lógica o tempo todo, sem se preocupar com a gerência de recursos, já que que o próprio framework se encarrega de cuidar disso.</p>
 				<footer>
 					<p>Artigo Original: <a href="http://www.devmedia.com.br/introducao-a-linguagem-c/27711">Introdução à linguagem C#</a></p>
 					<time datetime="2014-01-10" pubdate="pubdate">Artigo Publicado em 10 de Janeiro de 2014</time>
