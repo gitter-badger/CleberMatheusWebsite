@@ -243,3 +243,12 @@ section.AbaBody .TabBodyInline{
 pre{
 	border: solid white;
 }
+#EmBreve{
+	font-size: 200px;
+	position: fixed;
+	width: 100%;
+}
+#EmBreve :hover{
+	background-color: white;
+	color: rgb(0,0,228);
+}
