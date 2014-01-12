@@ -33,3 +33,10 @@ article img{
 video:active{
 	display: block;
 }
+#close{
+	z-index: 2000;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background: blue;
+}
