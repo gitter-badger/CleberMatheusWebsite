@@ -15,8 +15,8 @@ function ep1(){
 }
 function ep2(){
 	video1.poster = "http://static3.wikia.nocookie.net/__cb20110522012161/powerrangers/images/1/13/Shinkenboy.png";
-	gokaiger.src="ep2.mp4";
-	govideo1.src="ep2.webm";
+	gokaiger.src="https://googledrive.com/host/0B5QjfaSWUJ0VeGhRTThONVpPZGM/ep2.mp4";
+	govideo1.src="https://googledrive.com/host/0B5QjfaSWUJ0VeGhRTThONVpPZGM/ep2.ogv";
 	eps();
 }
 function play2(){
