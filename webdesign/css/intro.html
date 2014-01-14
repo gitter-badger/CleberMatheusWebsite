@@ -23,7 +23,55 @@
 		<section id="conteudo" style="width: 100%;">
 			<article>
 				<h2>O nascimento do HTML</h2>
-				<p>A linguagem de marcação HTML (Hyper Text Markup Language) foi desenvolvida e aperfeiçoada até tornar-se tal como a conhecemos nos dias atuais a partir de uma "invenção" devida a um pesquisador físico, para trafégo de textos e informações de natureza científica.</p>
+				<p>A linguagem de marcação HTML (Hyper Text Markup Language) foi desenvolvida e aperfeiçoada até tornar-se tal como a conhecemos nos dias atuais a partir de uma "invenção" devida a um pesquisador físico, para tráfego de textos e informações de natureza científica.</p>
+				<p>Assim, o embrião da HTML surgiu para servir a uma comunidade bastante restrita, a comunidade de cientistas. Com a introdução gradativa de novas tags, atributos e aplicações específicas, a HTML tornou-se padrão mundial de apresentação de conteúdo na Web.</p>
+				<h2>A HTML Atual</h2>
+				<p>E, já com várias inovações a HTML era usada para construção de páginas Web, que no início limitavam-se a exibir informações contidas em documentos de natureza científica.</p>
+				<p>A evolução vinha atropelando tudo com uma avalanche de novos aplicativos, facilidades, softwares, hardware etc. E a HTML não passou ao largo, pelo contrário, a simples linguagem de marcação destinada a apresentar conteúdos carecia de uma maior flexibilidade no sentido de manipular visualmente os conteúdos.</p>
+				<p>Novas tags e atributos foram inventados, tais como a tag <code>font</code> e o atributo <code>color</code> que permitiam alterar a aparência de textos.</p>
+				<p>Assim nasceu a <b>estilização</b> dos conteúdos.</p>
+				<p>E a evolução trazendo novas descobertas, corre célere neste dinamismo alucinante que estamos testemunhando até os dias de hoje. Novas tags e novos atributos de estilização foram introduzidos na HTML. Com isso, a velha linguagem de marcação passou a exercer uma dupla função. A função de estruturar o conteúdo através da marcação e a função de apresentá-lo ou seja de dar a aparência final.</p>
+				<h2>Os problemas criados</h2>
+				<p>Mas, esta dupla função da HTML, se por um lado resolveu necessidades de designers e projetistas por outro acabou trazendo sérios problemas aos projetos criados. Os documentos Web publicados na Internet, cada vez mais sofisticados e extensos, estavam fugindo do controle de seus criadores.</p>
+				<p>Para ilustrar suponha o seguinte exemplo:</p>
+				<p>Seu melhor cliente telefona às 17:00hs da tarde de uma sexta-feira (sempre ligam nesta hora para solicitar alguma coisa não é mesmo?) e diz o seguinte:</p>
+				<blockquote style="font-style: italic;">Teremos uma reunião aqui na empresa, na segunda-feira às 08:00hs com um potencial comprador e é nossa intenção fazer uma apresentação dos nossos produtos através do site que você criou e mantém. Seguindo uma sugestão do nosso departamento de marketing precisamos mudar a cor de todos os títulos no site de verde para vermelho, pois que esta é a cor principal da marca do nosso comprador e com isso pretendemos fixar uma cumplicidade subliminar. Isto é bem simples de fazer, não é? Afinal é só mudar a cor! Dá para você 'botar no ar' até às 19:30hs? Quero dar uma olhadinha antes de encerrar o expediente. OK?</blockquote>
+				<p>Claro que você concorda e responde que vai providenciar rapidinho, afinal é só para mudar a cor. Mas, são 180 páginas no site! E os títulos são tags de cabeçalho marcadas com linguagem HTML como mostrado a seguir.</p>
+				<pre>&lt;hn>
+	&lt;font color="#0f0">Título&lt;/font>
+&lt;/hn></pre>
+				<p>Supondo uma média de 3 títulos por página, você tem um total de 540 tags <code>font</code> para editar e mudar o atributo <code>color</code>. E se o seu cliente tivesse pedido para mudar a cor dos textos, e do fundo? Bem, este exemplo simples dá uma dimensão de um dos problemas criados com a mistura de marcação com apresentação - estilização!</p>
+				<h2>A solução proposta</h2>
+				<p>Cada vez mais ficava evidente que esta mistura que maravilhou os projetistas Web no início, tornara-se uma grande dor de cabeça. E é claro, a solução passava por dissociar linguagem de marcação da estilização.</p>
+				<p>Desta necessidade, eu diria mesmo uma imposição, nasceu a CSS, sigla em inglês para Cascading StyleSheet que em português foi traduzido para Folha de Estilo em Cascata.</p>
+				<p>A introdução deste conceito preconiza o uso dos elementos (tags) HTML, exclusivamente para marcar e estruturar o conteúdo do documento. Nenhum elemento ou atributo HTML será usado para alterar a apresentação, ou seja estilizar o conteúdo.</p>
+				<p>A tarefa de estilização ficará a cargo da CSS que nada mais é do que um arquivo independente do arquivo HTML no qual são declaradas propriedades e valores de estilização para os elementos da HTML.</p>
+				<p>Estas declarações de estilo, quer sejam estruturadas em um arquivo externo com extensão <code>.css</code> quer sejam declaradas de outros modos (importadas, lincadas, incorporadas ou inline - ver Vinculando folhas de estilos à documentos), contém todas as regras de estilo para os elementos do documento HTML.</p>
+				<p>Voltando àquela situação criada no item anterior, agora você mudaria a cor de TODOS os cabeçalhos <code>h</code> em TODO o site em CINCO SEGUNDOS. Às 19:20h você retorna a ligação do cliente e pede para a secretária avisá-lo de que "já está no ar", sem maiores traumas, correrias e estresses. Ah e mais, mesmo que o site tivesse 1.800 páginas e não as 180 da situação criada, você gastaria os mesmos cinco segundos.</p>
+				<h2>As restrições</h2>
+				<p>A idéia, a filosofia mesmo, de projeto Web aponta para uso amplo das CSS, ainda não explorada em toda sua potencialidade por razões de incompatibilidades de certas propriedades CSS com navegadores mais antigos e com as interpretações diferentes das CSS por parte das aplicações de usuários criadas por fabricantes distintos.</p>
+				<p>Contudo, há uma tendência - e torcemos para que se concretize rapidamente - de que as novas tecnologias voltadas para o desenvolvimento, não só das variadas aplicações de usuário como também de softwares e hardwares, atendam e se enquadrem dentro das recomendações e especificações dos órgãos normatizadores, notadamente as standards do W3C.</p>
+				<p>Quando o projeto Web em todas as suas incontáveis variantes, seguir a normatização e padronização recomendada pelo W3C, teremos uma Web muito mais fácil, dinâmica e agradável.</p>
+				<h2>O efeito cascata</h2>
+				<p>Que estilo será aplicado, quando há conflito de estilos especificados (por exemplo: uma regra de estilo determina que os parágrafos serão na cor preta e outra que serão na cor azul) para um mesmo elemento HTML?</p>
+				<p>Aqui entra o <b>efeito cascata</b>, que nada mais é, do que o estabelecimento de uma prioridade para aplicação da regra de estilo ao elemento.</p>
+				<p>Para determinar a prioridade são considerados diversos fatores, entre eles, o tipo de folha de estilo, o local físico da folha de estilo no seu todo, o local físico da regra de estilo na folha de estilo e a especificidade da regra de estilo.</p>
+				<p>A prioridade para o efeito cascata em ordem crescente é a seguinte:</p>
+				<ol>
+					<li>folha de estilo padrão do navegador do usuário;</li>
+					<li>folha de estilo do usuário;</li>
+					<li>folha de estilo do desenvolvedor;
+						<ul style="list-style-type: circle;">
+							<li>estilo externo (importado ou linkado).</li>
+							<li>estilo incorporado (definido na seção <code>head</code> do documento);</li>
+							<li>estilo inline (dentro de um elemento HTML);</li>
+						</ul>
+					</li>
+					<li>declarações do desenvolvedor com !important;</li>
+					<li>declarações do usuário com !important;</li>
+				</ol>
+				<p>Assim, uma declaração de estilo com !important definido pelo usuário prevalece sobre todas as demais, é a de mais alta prioridade. Entre as folhas de estilo definidas pelo desenvolvedor do site, os estilos inline (dentro de um elemento HTML) tem a prioridade mais elevada, isto é, prevalecerá sobre a folha de estilo definida na seção <code>head</code>, e, esta prevalecerá sobre uma folha de estilo externa. A prioridade mais baixa é para estilos padrão do navegador.</p>
+				<p>Agora você já sabe o porquê de "cascata" no nome Folha de estilo em cascata.</p>
 				<footer>
 					<p>Artigo Original: <a href="http://www.maujor.com/tutorial/intrtut.php">Tutorial CSS - Introdução as CSS - Tableless - Web Standards - Acessibilidade</a></p>
 					<time datetime="2014-01-13" pubdate="pubdate">13 de Janeiro de 2014</time>
