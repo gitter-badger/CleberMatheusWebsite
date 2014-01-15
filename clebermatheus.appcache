@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2014-01-13 v0.9.8.2
+#2014-01-15 v0.9.8.2
 
 CACHE:
 #StyleSheets
@@ -10,7 +10,6 @@ player.css
 
 #Javascripts
 drag.js
-tabs.js
 index.js
 database.js
 6C6F67696E73.js
@@ -28,8 +27,6 @@ database.js
 /webdesign/
 
 #Images
-back.png
-back-rtl.png
 close.png
 favicon.ico
 menu@2x.png
