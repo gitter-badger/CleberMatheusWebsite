@@ -26,6 +26,70 @@
 				<p>Quando você olha para uma página de Internet em um navegador, você enxerga, em um nível mais básico, palavras. Estas palavras geralmente tem algumas características de estilo, como diferentes tamanhos de fontes e cores. Em muitos casos uma página também exibe imagens ou talvez vídeo. Algumas vezes existe um formulário onde você pode inserir (ou procurar por) informação, ou personalizar a exibição da página ao seu gosto. Frequentemente uma página contém conteúdo animado e conteúdo que muda enquanto uma página permanece a mesma.</p>
 				<p>Várias tecnologias (como CSS, JavaScript, Flash, JSON) podem ser usadas para definir os elementos de uma página. Contudo, no nível mais baixo, uma página de Internet é definida usando HTML (<b>HyperText Markup Language</b>, ou <b>Linguagem de Marcação de HiperTexto</b>). Sem HTML não haveria página de Internet.</p>
 				<p>Este artigo fornece uma introdução ao HTML. Se você já se perguntou o quê acontece por trás das cenas em seu navegador de Internet, este artigo é o lugar para começar a aprender.</p>
+				<h2>Uma breve história do HTML</h2>
+				<p>No final dos anos 80, Tim Berners-Lee estava trabalhando como físico no CERN (a Organização Européia de Pesquisa Nuclear). Ele projetou um modo para cientistas compartilharem documentos pela Internet. Antes de sua invenção, a comunicação pela Internet era limitada à puro texto, usando tecnologias como email, FTP (Protocolo de Transferência de Arquivos) e fóruns de discussão baseados na Usenet. A invenção do HTML fazia uso de um modelo de conteúdo armazenado em um servidor central que seria transferido e visualizado em uma estação de trabalho local por meio de um navegador. Ela simplificou o acesso ao conteúdo e permitiu a exibição de conteúdos com visualização "rica" (como formatação de texto sofisticada e a exibição de imagens).</p>
+				<h2>O que é HTML?</h2>
+				<p>HTML é uma <b>linguagem de marcação</b>. Ela diz ao navegador de Internet como exibir conteúdo. O HTML separa o "conteúdo" (palavras, imagens, áudio, vídeo, e assim por diante) da "apresentação" (a definição do tipo de conteúdo e as instruções de como este conteúdo deve ser exibido). HTML usa um conjunto pré-definido de elementos para identificar tipos de conteúdo. Elementos contém um ou mais "tags" que contém ou expressam o conteúdo. Tags são delimitadas por sinais de maior e menor, e a tag de finalização (aquela que indica o fim de um conteúdo) é prefixada por uma barra.</p>
+				<p>Por exemplo, o elemento parágrafo consiste na tag de inicialização "&lt;p>" e na tag de finalização "&lt;/p>". O seguinte exemplo mostra um parágrafo contido dentro do elemento HTML parágrafo:</p>
+				<pre>&lt;p>Meu cachorro comeu toda a guacamole.&lt;/p></pre>
+				<p>Quando este conteúdo é mostrado em um navegador de Internet, ele se parece com:</p>
+				<p>Meu cachorro comeu toda a guacamole.</p>
+				<p>O Navegador usa as tags como um indicador de como exibir o conteúdo que está dentro das tags.</p>
+				<p>Elementos que contém conteúdo podem geralmente também conter outros elementos. Por exemplo, o elemento de ênfase ("&lt;em>") pode ser colocado dentro de um elemento parágrafo:</p>
+				<pre>&lt;p>Meu cachorro comeu &lt;em>toda&lt;/em> a guacamole.&lt;/p></pre>
+				<p>Quando exibido, isso se parece com:</p>
+				<p>Meu cachorro comeu <em>toda</em> a guacamole.</p>
+				<p>Alguns elementos não contém outros elementos. Por exemplo, a tag imagem ("&lt;img>") simplesmente especifica o nome do arquivo do conteúdo (uma imagem) como um atributo:</p>
+				<pre>&lt;img src="smiley.jpg"></pre>
+				<p>Frequentemente uma barra é colocada antes do último sinal de maior para indicar o fim de uma tag. Isso é opcional no HTML, mas obrigatório em XHTML (que é um esquema XML que implementa elementos HTML).</p>
+				<p>O resto deste artigo entra em maiores detalhes com relação aos conceitos introduzidos nesta seção. No entanto, se você quiser ver o HTML em ação, cheque o Mozilla Thimble, que é um editor on-line interativo que ensina à você como escrever marcação HTML. Também veja os Elementos HTML para uma lista de todos os elementos disponíveis e uma descrição de seu uso.</p>
+				<h2>Elementos - os blocos básicos de construção</h2>
+				<p>HTML consiste em um conjunto de <b>elementos</b>. Elementos definem o conteúdo <b>semântico</b> de seu conteúdo. Elementos incluem tudo entre duas tags de elementos que casam entre si, incluindo as próprias tags. Por exemplo, o elemento "&lt;p>" indica um parágrafo; o elemento "&lt;img>" indica uma imagem. Veja a página dos Elementos HTML para uma lista completa.</p>
+				<p>Alguns elementos possuem um significado bastante preciso, como em "isto é uma imagem", "isso é um título" ou "isto é uma lista ordenada". Outros são menos específicos, como em "isto é uma seção da página" ou "isto é uma parte de texto". Ainda outros são usados por razões técnicas, como em "isto é a identificação para a página e não deve ser exibido". De qualquer forma, de um jeito ou de outro, todos os elementos HTML possuem um valor semântico.</p>
+				<p>A maioria dos elementos podem conter outros elementos, formando uma estrutura hierárquica. Uma página de Internet muito simples, mas completa se parece com isso:</p>
+				<pre>&lt;html>&lt;body>&lt;p>Meu cachorro comeu toda a guacamole.&lt;/p>&lt;/body>&lt;/html></pre>
+				<p>Como você pode ver, elementos &lt;html> cercam o resto do documento, e elementos &lt;body> cercam o conteúdo da página. Essa estrutura é freqüentemente pensada como sendo uma árvore com ramos (neste caso, os elementos &lt;body> e &lt;p>) crescendo de um tronco (&lt;html>). Esta estrutura hierárquica é chamada de <b>DOM</b>: o <b>Modelo de Objeto de Documentos</b>.</p>
+				<h2>Tags</h2>
+				<p>Documentos HTML são escritos em texto puro. Eles podem ser escritos em qualquer editor de textos (embora a maioria dos autores HTML prefiram usar um editor especializado que marca a sintaxe e mostra o DOM). Nomes de tags podem ser escritas tanto em letras maiúsculas como minusculas. Contudo, o W3C (o consórcio global que mantém o padrão HTML) recomenda usar letras minúsculas (e o XHTML exige que sejam sempre letras minúsculas).</p>
+				<p>O HTML atribui significado especial à qualquer coisa que comece com o sinal de menor ("&lt;") e termine com o sinal de maior (">"). Tais marcações são chamadas de <b>tags</b>. Tenha a certeza de sempre fechar cada suas tags, já que embora algumas sejam fechadas por padrão, outras podem produzir erros inesperados se você esquecer de finalizá-las.</p>
+				<p>Eis aqui um exemplo simples:</p>
+				<pre>&lt;p>Isso é texto dentro de um parágrafo.&lt;/p></pre>
+				<p>Neste exemplo existe uma tag de <em>início</em> e uma tag de <em>fim</em>. Tags de fim são iguais às tags de início, mas também contém uma barra logo depois do sinal de menor inicial. A maioria dos elementos HTML são escritos usando tanto tags de começo e de fim. Tags de começo e de fim devem estar corretamente <strong>aninhadas</strong>, isto é, tags de fim devem ser posicionadas na ordem contrária das tags de início. O aninhamento adequado é uma regra que deve ser obedecida para que se possa escrever código <strong>válido</strong>.</p>
+				<p>Este é um exemplo de código <em>válido</em>:</p>
+				<pre>&lt;em>Eu &lt;strong>realmente&lt;/strong> quiz dizer aquilo&lt;/em>.</pre>
+				<p>Este é um exemplo de código <i>inválido</i>:</p>
+				<pre>Invalid: &lt;em>Eu &lt;strong>realmente&lt;/em> quiz dizer aquilo&lt;/strong>.</pre>
+				<p>Note que no exemplo válido, a tag de fim para cada elemento aninhado é sempre colocada antes da tag de fim do elemento no qual ele está aninhado.</p>
+				<blockquote style="font-style: italic;">Até a adoção das regras de análise léxica do HTML5, navegadores não interpretavam código inválido da mesma forma e produziam diferentes resultados quando encontravam código inválido. Navegadores eram tolerantes com falhas de autores Web, mas infelizmente nem todos exatamente da mesma forma, resultando em resultados quase imprevisíveis em caso de HTML inválido. Nos dias de hoje, isso já não é mais o caso com as últimas evoluções dos navegadores, como o Internet Explorer 10, Firefox 4, Opera 11.60, Chrome 18 ou Safari 5, já que eles implementam as regras de análise de código inválido agora padronizadas. Código inválido resulta na mesma árvore DOM em todos os navegadores modernos.</blockquote>
+				<p>Alguns elementos não contém qualquer texto ou qualquer outro elemento. Estes são os elementos <b>vazios</b> que não precisam de tags de encerramento. Este é um exemplo:</p>
+				<pre>&lt;meta charset="utf-8"></pre>
+				<p>Muitas pessoas marcam elementos vazios usando uma barra no final da tag (a qual é obrigatória em XHTML).</p>
+				<pre>&lt;meta charset="utf-8"/></pre>
+				<p>Em HTML esta barra não tem funcionalidade técnica e o seu uso é apenas uma escolha de estilo.</p>
+				<h2>Atributos</h2>
+				<p>A tag de início pode conter informações adicionais, como no exemplo acima. Tal informação é chamada de <b>atributo</b>. Atributos normalmente consistem em duas partes:</p>
+				<ul style="list-style: disc;">
+					<li>Um <b>nome</b> do atributo.</li>
+					<li>Um <b>valor</b> do atributo.</li>
+				</ul>
+				<p>Alguns poucos atributos possuem somente um valor. Eles são atributos Booleanos e podem ser abreviados especificando somente o nome do atributo ou deixando o seu valor vazio. Assim, os seguintes 3 exemplos tem todos o mesmo significado:</p>
+				<pre>&lt;input required="required">
+
+&lt;input required="">
+
+&lt;input required></pre>
+				<p>Valores de atributos que consistem em uma única palavra ou número podem ser escritos diretamente, mas se existirem duas ou mais palavras no valor, ele deve ser escrito dentro de aspas. Tanto aspas simples (') como aspas duplas (") são permitidas. Muitos desenvolvedores preferem sempre usar aspas para deixar o código com aparência menos ambígua e para evitar erros. O seguinte exemplo está errado:</p>
+				<pre>&lt;p class=foo bar> (Cuidado, isso provavelmente não significa o que você acha que significa.)</pre>
+				<p>Neste exemplo, o valor deveria ser "foo bar", mas como não há aspas no código, isso é interpretado como se fosse:</p>
+				<pre>&lt;p class="foo" bar=""></pre>
+				<h2>Referências à nomes de caracteres</h2>
+				<p><b>Referências à nomes de caracteres</b> (frequentemente chamadas casualmente de entidades) são usadas para mostrar caracteres que tem um significado especial em HTML. Por exemplo, HTML interpreta o sinal de menor e maior como delimitadores de tags. Quando você quer mostrar um sinal de maior no texto, você pode usar uma referência ao nome do caractere. Existem quatro referências comuns à caracteres que uma pessoa deve conhecer:</p>
+				<ul style="list-style: disc;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 				<footer>
 					<p>Artigo Original: <a href="https://developer.mozilla.org/pt-BR/docs/HTML/Introduction">Introdução ao HTML - HTML | MDN</a></p>
                     <time datetime="2014-01-14" pubdate="pubdate">Publicado em 14 de Janeiro de 2014</time>
