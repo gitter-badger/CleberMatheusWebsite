@@ -85,11 +85,43 @@
 				<h2>Referências à nomes de caracteres</h2>
 				<p><b>Referências à nomes de caracteres</b> (frequentemente chamadas casualmente de entidades) são usadas para mostrar caracteres que tem um significado especial em HTML. Por exemplo, HTML interpreta o sinal de menor e maior como delimitadores de tags. Quando você quer mostrar um sinal de maior no texto, você pode usar uma referência ao nome do caractere. Existem quatro referências comuns à caracteres que uma pessoa deve conhecer:</p>
 				<ul style="list-style: disc;">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>&amp;gt;denota o sinal de amior, " > ".</li>
+					<li>&amp;lt; denota o sinal de menor, " &lt; ".</li>
+					<li>&amp;amp; denota o sinal de apóstrofe, " &amp; ".</li>
+					<li>&amp;quot; denota o sinal de aspas duplas, ' " '.</li>
 				</ul>
+				<p>Existem <a href="http://www.w3.org/TR/2011/WD-html5-20110113/named-character-references.html">muito mais entidades</a>, mas estas quatro são as mais importantes por representar caracteres que tem um significado especial em HTML.</p>
+				<h2>Doctype e comentários</h2>
+				<p>Além das tags, conteúdo de textos e entidades, um documento HTML deve conter uma declaração <b>doctype</b> na primeira linha. A declaração <b>doctype</b> não é uma tag HTML; é uma instrução ao navegador de Internet sobre qual versão de HTML está sendo usada para escrever a página.</p>
+				<p>Em HTML 4.01, o doctype indica um DTD (Definição de Tipo de Conteúdo), já que ele foibaseado em SGML. Existem três diferentes declarações <b>doctype</b> em HTML 4.01.</p>
+				<h3>HTML 4.01 Estrito</h3>
+				<p>Este DTD contém todos os elementos HTML e atributos, mas NÃO INCLUI elementos de apresentação ou elementos obsoletos (como a tag "font"). Conjunto de frames não são permitidos.</p>
+				<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"></pre>
+				<h3>HTML 4.01 de Transição</h3>
+				<p>Este DTD contém todos os elementos e atributos HTML, INCLUINDO elementos de apresentação ou obsoletos (como font). Conjuntos de frames não são permitidos.</p>
+				<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></pre>
+				<h3>HTML 4.01 com Conjuntos de Frames</h3>
+				<p>Ente DTD é igüal ao HTML 4.01 de Transição, mas permite o uso de conteúdo em conjuntos de frames.</p>
+				<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"></pre>
+				<p>Já em HTML 5, existe somente uma declaração e ela é escrita desta forma:</p>
+				<pre>&lt;!DOCTYPE html></pre>
+				<p> doctype tem uma história longa e intrincada, mas por enquanto, tudo que você precisa saber é que este doctype pede ao navegador para interpretar o código HTML e CSS de acordo com os padrões W3C e não fazer de conta que é código para o Internet Explorer dos anos 90.</p>
+				<p>HTML também possui um mecanismo para embutir <b>comentários</b> que não são mostrados quando a página é renderizada em um navegador. Isso é útil para explicar uma seção de marcação, ou deixar notas para outras pessoas que forem trabalhar na página, ou deixar lembretes para si mesmo. Comentários HTML são delimitados por símbolos desta forma:</p>
+				<pre>&lt;!-- Isso é um texto de comentário --></pre>
+				<h2>Um documento completo, mas pequeno</h2>
+				<p>Para mostrar tudo isso junto, eis um pequeno exemplo de um documento HTML. Você pode copiar este código para um editor de textos, salvá-lo como <i>meuprimeirodocumento.html</i> e abri-lo em um navegador. Tenha certeza de salvá-lo usando a codificação de caracteres UTF-8. Como este documento não usa estilos, ele parecerá bastante simples, mas é somente um pequeno começo.</p>
+				<pre>&lt;!DOCTYPE html>
+&lt;html lang="pt-BR">
+	&lt;head>
+		&lt;meta charset="utf-8"/>
+		&lt;title>Um pequeno documento&lt;/title>
+	&lt;/head>
+	&lt;body>
+		&lt;h1>Título principal do meu documento&lt;/h1>
+		&lt;!-- Note que isso é um "h" + "um", não "h" + a letra "l" -->
+		&lt;p>Ooolha, manhê, eu estou escrevendo código &lt;abbr title="Linguagem de Marcação de Hipertexto">HTML&lt;/abbr>.&lt;/p>
+	&lt;/body>
+&lt;/html></pre>
 				<footer>
 					<p>Artigo Original: <a href="https://developer.mozilla.org/pt-BR/docs/HTML/Introduction">Introdução ao HTML - HTML | MDN</a></p>
                     <time datetime="2014-01-14" pubdate="pubdate">Publicado em 14 de Janeiro de 2014</time>
