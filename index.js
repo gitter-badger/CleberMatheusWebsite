@@ -83,36 +83,8 @@ function submitenter(myfield,e){
 		return true;
 	}
 }
-var opt1 = document.getElementById('opt2');
-var opt3 = document.getElementById('opt2').style.display="none";
-if(opt1==opt3){
-	document.getElementById('option').style.display="block";
-}
-if(document.body.clientWidth>700){
-	document.getElementById('lateral').style.display="block";
-	document.getElementById('opt2').style.display="block";
-}
-else{
-	document.getElementById('lateral').style.display="none";
-	document.getElementById('option').style.display="block";
-	document.getElementById('Mimg').src="menu.png";
-}
-function opt(){
-	document.getElementById('lateral').style.display="block";
-	document.getElementById('opt2').style.display="block";
-	if(screen.width>700){
-		document.getElementById('conteudo').style.width="84.5%";
-		document.getElementsByTagName('h1')[0].style.width="79.5%";
-	}
-}
-function opt2(){
-	document.getElementById('lateral').style.display="none";
-	document.getElementById('opt2').style.display="none";
-	if(screen.width>700){
-		document.getElementById('conteudo').style.width="100%";
-		document.getElementsByTagName('h1')[0].style.width='95%';
-	}
-}
+if(document.body.clientWidth>700){}
+else{}
 function optMenu(){
 	document.getElementById('HoverMenu').style.display="block";
 	document.getElementById('optMenu').style.display="none";
