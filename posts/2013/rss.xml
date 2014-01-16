@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cleber Matheus Website FeedRSS</title>
+		<link>http://clebermatheus.users.sourceforge.net</link>
+		<description>Website oficial de Cleber Matheus!</description>
+		<language>pt-BR</language>
+		<generator>Notepad++ v6.5.2</generator>
+		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
+		<pubDate>Tue, 30 Jul 2013 23:34:25 -0300</pubDate>
+		<image>
+			<url></url>
+			<title>Cleber Matheus Website</title>
+			<link>http://clebermatheus.users.sourceforge.net/</link>
+		</image>
+		<item>
+			<title>30 de Julho: 1.0, Beta 3 e o Grande Dia</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-30-07-2013.html</link>
+			<description>Ontem pode ser conhecido como o Grande Dia dos Lançamentos, pois o Cleber Matheus AppSeries chegou a 1.0 e o Folha Plus a beta 3 e pode...</description>
+			<pubDate>Tue, 30 Jul 2013 23:34:25 -0300</pubDate>
+		</item>
+		<item>
+			<title>26 de Julho: RC3 e Genesys a13v9</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-26-07-2013.html</link>
+			<description>Neste dois dias, tivemos mais uma Genesys e a última RC antes da versão 1.0, poucas novidades e faltam 3 dias para o...</description>
+			<pubDate>Fri, 26 Jul 2013 23:45:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Cleber Matheus AppSeries: RC2, duas Genesys e muito mais</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-24-07-2013.html</link>
+			<description>Faltam 5 dias para o grande lançamento da versão 1.0 do Cleber Matheus AppSeries e lançamento da versão Beta 3 do Folha Plus AppSeries...</description>
+			<pubDate>Wed, 24 Jul 2013 22:04:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Cleber Matheus AppSeries: Desktop, Alternative, Mobile e muito mais...</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/07/post-13-07-2013.html</link>
+			<description>Depois de seis meses, voltei a postar no site, porque estive muito ocupado com a faculdade. Voltando para as atualizações e novidades...</description>
+			<pubDate>Sat, 13 Jul 2013 22:04:00 -0300</pubDate>
+		</item>
+		<item>
+			<title>Atualizações de Janeiro de 2013!</title>
+			<link>http://clebermatheus.users.sf.net/posts/2013/01/post-31-01-2013.html</link>
+			<description>Neste mês de Janeiro, atualizei o iPlus e Cleber Matheus DesktopApp; lancei o Folha Plus DesktopApp e vem muito mais neste ano!</description>
+			<pubDate>Thu, 31 Jan 2013 20:31:34 -0300</pubDate>
+		</item>
+	</channel>
+</rss>
