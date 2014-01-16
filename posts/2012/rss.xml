@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts de 2012</title>
+		<link>http://clebermatheus.users.sourceforge.net/posts/2012</link>
+		<description>Feed RSS de 2012</description>
+		<language>pt-BR</language>
+		<generator>Notepad++ v6.5.2</generator>
+		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
+		<pubDate>Tue, 16 Jul 2014 14:34:37 -0300</pubDate>
+		<image>
+			<url>http://clebermatheus.users.sourceforge.net/posts/2012/favicon.png</url>
+			<title>Posts de 2012</title>
+			<link>http://clebermatheus.users.sourceforge.net/posts/2012</link>
+		</image>
+		<item>
+			<title>Bem-vindo!</title>
+			<link>http://clebermatheus.users.sourceforge.net/posts/2012/05/#welcome</link>
+			<description>Seja bem-vindo ao site!</description>
+			<pubDate>Sun, 20 May 2012 00:00:00 -0300</pubDate>
+		</item>
+	</channel>
+</rss> 
