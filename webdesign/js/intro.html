@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" manifest="/clebermatheus.appcache">
+	<head>
+		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<meta charset="UTF-8"/>
+		<title>Introdução ao Javascript</title>
+		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="author" content="Cleber Matheus"/>
+		<link rel="shortcut icon" href="favicon.png"/>
+		<meta name="description" content="Introdução ao Javascript"/>
+		<meta name="reply-to" content="clebermatheus@outlook.com"/>
+		<meta name="keywords" content="intro javascript, intro js"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="/index.css"/>
+		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website Feed RSS"/>
+	</head>
+	<body onload="cache()" contextmenu="menu1">
+		<header>
+			<h1>Introdução ao Javascript</h1>
+			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+		</header>
+		<section id="conteudo" style="width: 100%;">
+			<article>
+				<h2>O que é JavaScript?</h2>
+				<p>JavaScript  é uma nova linguagem para páginas Web. Os scripts escritos com JavaScript podem ser colocados dentro das suas páginas HTML. Com JavaScript você tem muitíssimas possibilidades de melhorar a sua página HTML com elementos interessantes. Você é capaz, por exemplo, de responder muito facilmente a eventos iniciados pelo usuário. Alguns dos efeitos que agora podemos fazer com Javascript, há algum tempo atrás só eram possíveis com CGI. Deste modo, você pode criar páginas muito sofisticadas com a ajuda do JavaScript. Você pode achar também muitos exemplos de scripts de Javascript na Internet. O melhor que se tem a fazer, então, é dar uma olhada em algumas páginas melhoradas com JavaScript. Você vai achar muitos desses links em <a href="http://www.gamelan.com/" style="font-weight: bold;">Gamelan</a> (na seção de JavaScript). Você tambem encontrará a documentação publicada pela Netscape em <a href="http://home.netscape.com" style="font-weight: bold;">http://home.netscape.com</a>.</p>
+				<h2>Qual é a diferença entre Java e JavaScript?</h2>
+				<p>Ainda que os nomes sejam quase os mesmos, Java não é a mesma coisa que JavaScript! Essas são duas técnicas diferentes de programação na Internet. Java é uma linguagem de programação. JavaScript é uma linguagem de scripting (tal como diz o nome). A diferença é que se pode criar programas reais com Java. O mais das vezes, porém, você quer apenas criar um efeito chamativo, sem se importar com qualquer programa real. Assim, JavaScript foi pensado como algo fácil de se compreender e de se usar. Os autores de JavaScript não têm que se importar muito com programação. Nós poderíamos até dizer que JavaScript é muito mais uma extensão do HTML do que uma linguagem de computador separada. Naturalmente essa não é uma definição "oficial" mas acho que ela torna mais compreensível a diferença entre Java e JavaScript. Você pode encontrar informações adicionais acerca de Java e JavaScript em <a href="http://www.gamelan.com/" style="font-weight: bold;">Gamelan</a>.</p>
+				<p>Para informações adicionais acerca desse tópico, leia a introdução fornecida pela <a href="http://home.netscape.com" style="font-weight: bold;">Netscape</a>.</p>
+				<h2>Como os scripts do JavaScript podem ser rodados?</h2>
+				<p>O primeiro browser a suportar JavaScript foi o Netscape Navigator 2.0. É claro que as versões maiores também rodam JavaScript. Você deve saber que nem toda as versões de  Netscape Navigator 2.0 (ou maiores) rodam Java. Mas isso não é verdadeiro para o JavaScript - ainda que existam problemas entre as diferentes versões. A versão Mac, por exemplo, parece ter apresentado muito defeito. No futuro próximo deverá haver outros browsers que suportarão também o JavaScript. O Microsoft Internet Explorer 3.0, por exemplo, suportará JavaScript. Browsers habilitados ao JavaScript tendem a se tornar daqui a pouco muito populares, por isso vale a pena aprender essa técnica logo. Você já deve estar imaginando que é realmente fácil escrever scripts de JavaScript. Tudo o que se tem a fazer é conhecer algumas técnicas básicas, e trabalhar algum tempo em torno dos problemas que você pode encontrar.</p>
+				<p>Naturalmente, você vai necessitar de um conhecimento básico de HTML antes de começar a ler este tutorial. Você pode achar muitos recursos online sobre HTML que são excelentes. O melhor é fazer uma busca on-line de 'html' no <a href="http://www.yahoo.com/" style="font-weight: bold;">Yahoo</a>, se você quer ficar por dentro da matéria. (Esses documentos online são frequentemente mais atualizados do que livros: a Internet anda muito rápida atualmente...)</p>
+				<p>Agora eu quero lhe mostrar alguns pequenos scripts. Assim você pode aprender como eles são implementados nos documentos em HTML e ficar sabendo quais são as possibilidades da nova linguagem de scripting. Eu começarei com um script muito pequeno, que só imprime um texto num documento HTML.</p>
+				<pre>&lt;html>
+&lt;head>
+&lt;title>Meu primeiro JavaScript!&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;br/>
+Este é um documento HTML normal.
+&lt;br/>
+  &lt;script language="JavaScript">
+    document.write("Este é um JavaScript!");
+  &lt;/script>
+&lt;br/>
+De volta ao HTML.
+&lt;/body>
+&lt;/html></pre>
+				<p>Se você estiver usando um browser habilitado ao JavaScript, neste momento você estará vendo este script funcionar. Se o seu browser não suporta JavaScript então este resultado deve ser algo estranho...</p>
+				<p><i>Este é um documento HTML normal. <br/>Este &eacute; um JavaScript! <br/>De volta ao HTML.</i></p>
+				<p>Devo admitir que este script não é muito útil. Você poderia escrever a mesma coisa no HTML de maneira muito mais rápida e curta. Mas o que eu quis mostrar é como você deve usar os tags &lt;script>. Você pode usar esses tags no seu documento no lugar que quiser. </p>
+				<p>Eu não desejo aborrecê-lo com scripts tão estúpidos. Vamos passar logo para as funções. Elas também não são difíceis de se entender, mas, acredite-me, são muito mais úteis! As funções são melhor declaradas entre os tags de &lt;head> da sua página-HTML. As funções são convocadas por eventos iniciados pelo usuário. Por isso é razoável manter as funções entre os tags de &lt;head>. Elas são carregadas antes que o usuário possa fazer alguma ação que chamará a função. Os scripts podem ser colocados entre os campos de comentários internos para assegurar que os antigos browsers não mostrem o próprio script.</p>
+				<pre>&lt;html>
+&lt;head>
+  &lt;script language="JavaScript">
+     function pushbutton() {
+       alert("Alo!");
+  }
+ &lt;/script>
+&lt;/head>
+&lt;body>
+&lt;form>
+  &lt;input type="button" name="Button1" value="Aperte-me" onclick="pushbutton()">
+  &lt;/form>
+&lt;/body>
+&lt;/html></pre>
+				<p>Se você quiser testar este script agora, e estiver usando um browser habilitado ao JavaScript, então siga adiante e aperte o botão.</p>
+				<form>
+					<input type="button" value="Aperte-me" onclick="alert('Alo!')"/>
+				</form>
+				<p>Este script irá criar um botão, e quando você o pressiona aparece uma janela dizendo 'Alo!'. Não é legal? Então, o que acontece neste script? Em primeiro lugar, uma função é carregada e guardada na memória. Depois é criado um botão com o tag de &lt;form> normal (HTML). Existe uma coisa nova no tag de &lt;input>. Lá você pode ver 'onclick'. Isto diz ao browser que função ele tem que chamar quando o botão é pressionado (é claro que só quando o browser suporta JavaScript). A função 'pushbutton()' é declarada no cabeçalho (header). Quando o botão é pressionado a função é executada. Tem uma coisa nova neste script - o método 'alerta'. Este método já é declarado no JavaScript - desse modo você só tem que chamá-lo. Existem muitos métodos diferentes que você pode chamar. Eu vou mostrar alguns aqui. Você pode encontrar uma descrição completa no site da Netscape. Eu acho que essa lista vai se tornar muito maior num futuro próximo. Mas já neste momento existem algumas coisas legais que nós podemos fazer com esses métodos já dados.</p>
+				<p>(Eu não acho que o método 'alerta' foi pensado para ser usado desta maneira - mas a gente só está aprendendo. E desse modo é muito mais fácil de se entender. Eu espero que você me perdoe...) </p>
+				<p>Nós já chegamos bem longe por agora. De fato, nós temos um monte de possibilidades apenas adicionando funções aos nossos scripts. Agora eu vou lhe mostrar como você pode ler alguma coisa que o usuário colocou num formulário.</p>
+				<pre>&lt;html>
+&lt;head>
+&lt;script language="JavaScript">
+&lt;!--  hide script from old browsers
+  function getname(str) {
+    alert("Oi, "+ str+"!");
+  }
+// end hiding contents -->
+&lt;/script>
+&lt;/head>
+&lt;body>
+Coloque o seu nome, por favor:
+&lt;form>
+  &lt;input type="text" name="name" onBlur="getname(this.value)" value="">
+&lt;/form>
+&lt;/body>
+&lt;/html></pre>
+				<p>Agora você pode testar este script novamente: </p>
+				<p><i>Coloque o seu nome, por favor:</i></p>
+				<form>
+					<input type="text" onBlur="alert('Oi, '+ this.value+'!');" value=""/>
+				</form>
+				<p>Nós temos alguns elementos novos implementados neste script novamente. Em primeiro lugar, você certamente notou o comentário dentro do script. Dessa maneira você pode esconder o script dos browsers antigos que não podem rodar scripts. Você tem que manter a ordem daquilo que é mostrado! O início do comentário deve estar logo depois do primeiro tag de &lt;script>. O comentário termina logo antes do tag de &lt;/script>. Neste documento-HTML você tem um elemento de formulário onde o usuário pode colocar o seu nome. O 'onBlur' no tag de &lt;input> avisa ao cliente que função que ele tem que chamar quando alguma coisa é colocada dentro do formulário. A função 'getname(str)' será chamada quando você 'deixa' este elemento de formulário, ou pressiona o 'enter' depois de haver colocado alguma coisa. A função pegará a seqüência que você colocou através do comando 'getname(this.value)'. 'This.value' significa o valor que você colocou neste elemento de formulário.</p>
+				<p>Eu acho que o próximo passo é bem legal também. Nós vamos implementar uma função de data dentro do nosso script. Assim, se você criou uma página-HTML, você pode fazer o cliente imprimir a última modificação no documento. Você não precisa, entretanto, escrever a data no documento. Você simplesmente escreve um pequeno programa de script. Quando você fizer pequenas modificações no futuro, a data se modificará automaticamente.</p>
+				<pre>&lt;html>
+&lt;body>
+Esta é uma página-HTML simples.
+&lt;br>
+Últimas modificações:
+  &lt;script language="JavaScript">
+  &lt;!--  hide script from old browsers
+    document.write(document.lastModified)
+  // end hiding contents -->
+  &lt;/script>
+&lt;/body>
+&lt;/html></pre>
+				<p>No momento esta propriedade parece não funcionar em todas as máquinas. Alguns servidores só mostram a data 1/1/1970. Parece haver alguns problemas com essa função. Nós temos que esperar pela próxima atualização e torcer para que isto funcione adequadamente em todas as máquinas. Mas você pode testar isto na sua própria máquina - em algumas isso parece funcionar muito bem.</p>
+				<p>Como eu já disse, as coisas estão mudando muito rápido hoje em dia. Assim, não seria muito divertido se na semana que vem houvesse uma tremenda mudança no JavaScript! Deste modo, você deve sempre ficar de olho nas últimas novidades, pois essa linguagem é muito nova. Seja compreensível se algumas das coisas aqui mencionadas também se modificarem. Mas eu acho que os princípios básicos deverão permanecer os mesmos.</p>
+				<footer>
+					<p>Artigo Original: <a href="http://unix.wmonline.com.br/js/tutoriais/cursojs/javascr.htm">Introdução ao Javascript</a></p>
+					<time datetime="2014-01-15" pubdate="pubdate">Artigo Publicado em 15 de Janeiro de 2014</time>
+				</footer>
+			</article>
+		</section>
+		<section id="HoverMenu" onclick="HMenu()">
+			<nav id="nav1">
+				<ul id="MPr">
+					<h2>Menu</h2>
+					<li><a href="/">Página Inicial</a></li>
+					<li><a href="/app/">Aplicativos</a></li>
+					<li><a href="/games/">Jogos</a></li>
+					<li><a href="/projetos/">Meus Projetos</a></li>
+					<li><a href="/opensource/">OpenSource</a></li>
+					<li><a href="/programacao/">Programação</a></li>
+					<li><a href="/sobre/">Sobre</a></li>
+					<li><a href="/support/">Suporte</a></li>
+					<li><a href="/videos/">Vídeos</a></li>
+					<li><a href="/webdesign/">WebDesign</a></li>
+					<li><a href="/rss.xml">Feed RSS</a></li>
+				</ul>
+			</nav>
+			<section id="MenuTab">
+				<section id="Tabs">
+					<span id="Tab0" class="active" onclick="ChangeTab('Tab', 0)">WebDesign</span>
+					<span id="Tab1" class="inactive" onclick="ChangeTab('Tab', 1)">Extras</span>
+				</section>
+				<section id="Content">
+					<section id="ConTab0" class="active">
+						<a href="/webdesign/css/"><img src="/webdesign/css/favicon.png" alt="CSS3"/><span>CSS3</span></a>
+						<a href="/webdesign/html/"><img src="/webdesign/html/favicon.ico" alt="HTML5.1"/><span>HTML5.1</span></a>
+						<a href="/webdesign/js/"><img src="/webdesign/js/favicon.png" alt="JavaScript"/><span>JavaScript</span></a>
+					</section>
+					<section id="ConTab1" class="inactive">
+						<div id="ads">
+							<script type="text/javascript">
+								bb_bid = "1677784";
+								bb_lang = "pt-BR";
+								bb_name = "custom";
+								bb_limit = "4";
+								bb_format = "bbk";
+							</script>
+							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+						</div>
+						<footer id="footer1">
+							<p>Cleber Matheus Website - 2014</p>
+							<time datetime="2014-01-15" pubdate="pubdate">15 de Janeiro de 2014</time>
+							<button onclick="cache()">Atualizar!</button>
+						</footer>
+					</section>
+				</section>
+			</section>
+		</section>
+		<menu id="menu1" type="context">
+			<menuitem id="sobre1" onclick="about()">Sobre...</menuitem>
+		</menu>
+		<script type="text/javascript" async src="/index.js"></script>
+	</body>
+</html>
