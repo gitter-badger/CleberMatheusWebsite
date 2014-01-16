@@ -5,7 +5,7 @@
 		<link>http://clebermatheus.users.sourceforge.net</link>
 		<description>Website oficial de Cleber Matheus!</description>
 		<language>pt-BR</language>
-		<generator>Notepad++ v6.4.2</generator>
+		<generator>Notepad++ v6.5.2</generator>
 		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
 		<pubDate>Tue, 30 Jul 2013 23:34:25 -0300</pubDate>
 		<image>
@@ -66,54 +66,6 @@
 			<link>http://clebermatheus.users.sourceforge.net/webdesign/html/#mathml</link>
 			<description>O MathML é um meio de exibir fórmulas matemáticas numa página HTML...</description>
 			<pubDate>Sat, 17 Nov 2012 14:27:10 -0300</pubDate>
-		</item>
-		<item>
-			<title>Cleber Matheus WebApp</title>
-			<link>http://clebermatheus.users.sourceforge.net/app/cmwa.html</link>
-			<description>Versão atual: Aplha 1</description>
-			<pubDate>Sun, 28 Oct 2012 22:09:30 -0300</pubDate>
-		</item>
-		<item>
-			<title>Atualização do site</title>
-			<link>http://clebermatheus.users.sourceforge.net/#atualizacao1</link>
-			<description>Hoje os site foi atualizado, ganhando icones na lateral esquerda no ...</description>
-			<pubDate>Thu, 27 Sep 2012 17:51:30 -0300</pubDate>
-		</item>
-		<item>
-			<title>Novas Páginas (Atualizado)</title>
-			<link>http://clebermatheus.users.sourceforge.net/opensource/#oquee</link>
-			<description>Novas páginas disponíveis!</description>
-			<pubDate>Thu, 20 Sep 2012 00:00:00 -0300</pubDate>
-		</item>
-		<item>
-			<title>O que é OpenSource?</title>
-			<link>http://clebermatheus.users.sourceforge.net/#newpage</link>
-			<description>Open Source (ou Código Aberto) é uma ramificação do movimento do Software Livre....</description>
-			<pubDate>Thu, 13 Sep 2012 00:00:00 -0300</pubDate>
-		</item>
-		<item>
-			<title>Sobre o Site</title>
-			<link>http://clebermatheus.users.sourceforge.net/sobre/#sobresite</link>
-			<description>Um site dinâmico que mostra vários conteúdos sobre Programção, Webdesign entre outros.</description>
-			<pubDate>Sat, 8 Sep 2012 00:00:00 -0300</pubDate>
-		</item>
-		<item>
-			<title>LibreStore</title>
-			<link>http://clebermatheus.users.sourceforge.net/projetos/#librestore</link>
-			<description>É uma loja de aplicativos totalmente livre, para Windows, Linux, Mac OSX e BCM OS.</description>
-			<pubDate>Wed, 5 Sep 2012 00:00:00 -0300</pubDate>
-		</item>
-		<item>
-			<title>Transports Simulator</title>
-			<link>http://clebermatheus.users.sourceforge.net/projetos/#transsimulator</link>
-			<description>É um simulador de Transportes Open Source.</description>
-			<pubDate>Wed, 5 Sep 2012 00:00:00 -0300</pubDate>
-		</item>
-		<item>
-			<title>Folha Plus</title>
-			<link>http://clebermatheus.users.sourceforge.net/projetos/#folhaplus</link>
-			<description>O Folha Plus é um aplicativo de notícias, sobre o Blogs Cleber Matheus, o iPlus, BCM OS, BCM Office, Transports Simulator, OpenStore e o Cleber Matheus Website.</description>
-			<pubDate>Wed, 5 Sep 2012 00:00:00 -0300</pubDate>
 		</item>
 	</channel>
 </rss>
