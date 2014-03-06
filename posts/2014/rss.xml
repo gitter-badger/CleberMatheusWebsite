@@ -5,14 +5,20 @@
 		<link>http://clebermatheus.users.sourceforge.net/posts/2014</link>
 		<description>Posts de 2014</description>
 		<language>pt-BR</language>
-		<generator>Notepad++ v6.5.2</generator>
+		<generator>Notepad++ v6.5.4</generator>
 		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
-		<pubDate>Thu, 16 Jan 2014 20:22:00 -0300</pubDate>
+		<pubDate>Wed, 05 Mar 2014 23:34:00 -0300</pubDate>
 		<image>
 			<url>favicon.png</url>
 			<title>Postagens de 2014 - Icon</title>
 			<link>http://clebermatheus.users.sourceforge.net/posts/2014</link>
 		</image>
+		<item>
+			<title>Progresso do Revox Alpha 2</title>
+			<link>/posts/2014/03/post-05-03-2014.html</link>
+			<description>Até esta publicação já terminei de adicionar os protocolos: HTTPS, file...</description>
+			<pubDate>Wed, 05 Mar 2014 23:34:00 -0300</pubDate>
+		</item>
 		<item>
 			<title>[v0.9.8.2]: Mais Rápido, Mais Leve e Mais Conteúdo</title>
 			<link>/posts/2014/01/post-16-01-2014.html</link>
