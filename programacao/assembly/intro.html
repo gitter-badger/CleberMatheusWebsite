@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Introdução a Linguagem Assembly (Traduzido)</title>
 		<link rel="stylesheet" href="/index.css"/>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Introdução a Assembly"/>
@@ -16,10 +16,23 @@
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
-			<h1 style="width: 100%;">Introdução a Linguagem Assembly</h1>
+			<h1>Introdução a Linguagem Assembly</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<article>
 				<p>Este é uma breve introdução a Linguagem Assembly. Assembly é a linguagem mais básica de programação disponível para qualquer processador. Com a linguagem Assembly, um programador trabalha somente com operações implementadas diretamente na CPU física. Linguagem Assembly carece de conveniências de alto-nível como variáveis e funções, e não é portátil entre as diversas famílias de processadores. No entanto, a linguagem Assembly é a linguagem de programação mais poderosa disponível no computador, e dá aos programadores a visão necessária para escrever código eficiente em linguagens de alto-nível. Aprender a Linguagem Assembly é valorizar o tempo e o esforço de todos os programadores sérios.</p>
 				<h2>O Básico</h2>
@@ -47,7 +60,7 @@
 				mov ds, ax
 				mov byte[0F9E], 24
 				int 20</pre>
-				<p>Como vocês podem ver, eu converti todos os números em hexadecimal, e fiz algumas mudanças para o debug poder entender o que está acontecendo. Se você cometer um erro ao entrar no programa acima, pressione enter duas vezes, digite novamente “a100”, e comece a introduzir as instruções no início do programa.</p>
+				<p>Como vocês podem ver, converti todos os números em hexadecimal, e fiz algumas mudanças para o debug poder entender o que está acontecendo. Se você cometer um erro ao entrar no programa acima, pressione enter duas vezes, digite novamente “a100”, e comece a introduzir as instruções no início do programa.</p>
 				<p>Depois de ter entrado no programa, você pode ir em frente e executá-lo. Basta digitar “g” e pressione enter quando estiver pronto para iniciar o programa. Você deve ver um sinal de dólar no canto inferior direito da tela, e as palavras “Program terminated normally.” Estas palavras são colocadas pelo Debug para informá-lo que o programa terminou normalmente. Parabéns! Você acabou de inserir e executar o seu programa feito em Assembly!</p>
 				<p>Vamos voltar para o Windows agora. Vá em frente e digite “q” para sair de depuração. Agora, digite “exit” para sair do MS-DOS. Agora você deve estar de volta ao Windows.</p>
 				<footer>
@@ -55,6 +68,29 @@
 					<time datetime="2014-01-06" pubdate="pubdate">Artigo publicado em 6 de Janeiro de 2014.</time>
 				</footer>
 			</article>
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/programacao/assembly/">Assembly</a></li>
+					<li><a href="/programacao/c/">C</a></li>
+					<li><a href="/programacao/cpp/">C++</a></li>
+					<li><a href="/programacao/csharp/">C#</a></li>
+					<li><a href="/programacao/java/">Java</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">

@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>CSS - WebDesign</title>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Conheça mais a fundo o CSS e o CSS3!"/>
@@ -19,8 +19,21 @@
 		<header>
 			<h1>CSS3</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<article>
 				<header>
 					<h2>Introdução ao CSS</h2>
@@ -30,11 +43,31 @@
 					<time datetime="2014-01-13" pubdate="pubdate">13 de Janeiro de 2014</time>
 				</footer>
 			</article>
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/webdesign/css/">CSS3</a></li>
+					<li><a href="/webdesign/html/">HTML5.1</a></li>
+					<li><a href="/webdesign/js/">JavaScript</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">
 				<ul id="MPr">
-					<h2>Menu</h2>
 					<li><a href="/">Página Inicial</a></li>
 					<li><a href="/app/">Aplicativos</a></li>
 					<li><a href="/games/">Jogos</a></li>

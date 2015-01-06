@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Introdução ao HTML</title>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="description" content="Introdução ao HTML"/>
@@ -20,8 +20,21 @@
 		<header>
 			<h1>Introdução ao HTML</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<article id="intro">
 				<p>Quando você olha para uma página de Internet em um navegador, você enxerga, em um nível mais básico, palavras. Estas palavras geralmente tem algumas características de estilo, como diferentes tamanhos de fontes e cores. Em muitos casos uma página também exibe imagens ou talvez vídeo. Algumas vezes existe um formulário onde você pode inserir (ou procurar por) informação, ou personalizar a exibição da página ao seu gosto. Frequentemente uma página contém conteúdo animado e conteúdo que muda enquanto uma página permanece a mesma.</p>
 				<p>Várias tecnologias (como CSS, JavaScript, Flash, JSON) podem ser usadas para definir os elementos de uma página. Contudo, no nível mais baixo, uma página de Internet é definida usando HTML (<b>HyperText Markup Language</b>, ou <b>Linguagem de Marcação de HiperTexto</b>). Sem HTML não haveria página de Internet.</p>
@@ -127,11 +140,31 @@
                     <time datetime="2014-01-14" pubdate="pubdate">Publicado em 14 de Janeiro de 2014</time>
                 </footer>
 			</article>
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/webdesign/css/">CSS3</a></li>
+					<li><a href="/webdesign/html/">HTML5.1</a></li>
+					<li><a href="/webdesign/js/">JavaScript</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">
 				<ul id="MPr">
-					<h2>Menu</h2>
 					<li><a href="/">Página Inicial</a></li>
 					<li><a href="/app/">Aplicativos</a></li>
 					<li><a href="/games/">Jogos</a></li>

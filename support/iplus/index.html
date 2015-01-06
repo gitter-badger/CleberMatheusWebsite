@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE HTML>
 <html lang="pt-BR" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8">
 		<title>Suporte para o iPlus</title>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="description" content="Suporte para o iPlus"/>
@@ -23,9 +23,30 @@
 		<header>
 			<h1>Suporte do BCM iPlus Browser</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<p id="EmBreve">Em Breve!</p>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/support/iplus/">BCM iPlus Browser</a></li>
+					<li><a href="/support/revox/">BCM Revox Engine</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">

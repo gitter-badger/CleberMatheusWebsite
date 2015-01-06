@@ -36,7 +36,7 @@ function cache(){
 	}, false);
 }
 function about(){
-	window.alert("Sobre...\r\n\tCleber Matheus WebSite v0.9.8.2");
+	window.alert("Sobre...\r\n\tCleber Matheus WebSite v0.9.8.5");
 }
 function css(){
 	location.href="/webdesign/css";
@@ -91,6 +91,20 @@ function optMenu(){
 	document.getElementById('nav1').style.height=window.innerHeight;
 	document.getElementById('MPr').style.display="table";
 	document.getElementById('MPr').style.height=window.innerHeight;
+}
+function subMenu(){
+	document.getElementById('subMenu').style.display="block";
+	document.getElementById('opt2Menu').className = "act";
+	document.getElementById('nav2').style.height=window.innerHeight;
+	document.getElementById('NPr').style.display="table";
+	document.getElementById('NPr').style.height=window.innerHeight;
+}
+function SMenu(){
+	var opt = document.getElementById('opt2Menu');
+	if(opt.className == "act"){
+		document.getElementById('subMenu').style.display='none';
+		opt.className = "";
+	}
 }
 function HMenu(){
 	document.getElementById('HoverMenu').style.display='none';

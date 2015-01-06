@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Aprenda C!</title>
 		<link rel="stylesheet" href="/index.css"/>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Aprenda a programar em C"/>
@@ -17,10 +17,23 @@
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
-			<h1 style="width: 100%;">C</h1>
+			<h1>C</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<article id="introC">
 				<header>
 					<h2>Introdução Ao C</h2>
@@ -31,6 +44,29 @@
 					<time datetime="2013-10-16" pubdate="pubdate">16 de Outubro de 2013</time>
 				</footer>
 			</article>
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/programacao/assembly/">Assembly</a></li>
+					<li><a href="/programacao/c/">C</a></li>
+					<li><a href="/programacao/cpp/">C++</a></li>
+					<li><a href="/programacao/csharp/">C#</a></li>
+					<li><a href="/programacao/java/">Java</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">

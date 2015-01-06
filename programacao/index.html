@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Programação - Cleber Matheus Website</title>
 		<link rel="stylesheet" href="/index.css"/>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Conheça um pouco sobre Programação, Assembly, C++, C#, C e Java."/>
@@ -18,9 +18,22 @@
 		<header>
 			<h1>Programação</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
-			<p>Conheça um pouco sobre Programação, Assembly, C++ e C#.</p>
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+			<p>Conheça um pouco sobre Programação, Assembly, C, C++, C# e Java.</p>
 			<article id="asm">
 				<header>
 					<h2>Assembly</h2>
@@ -71,6 +84,29 @@
 					<time datetime="2013-06-20" pubdate="pubdate">20 de Junho de 2013</time>
 				</footer>
 			</article>
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/programacao/assembly/">Assembly</a></li>
+					<li><a href="/programacao/c/">C</a></li>
+					<li><a href="/programacao/cpp/">C++</a></li>
+					<li><a href="/programacao/csharp/">C#</a></li>
+					<li><a href="/programacao/java/">Java</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">

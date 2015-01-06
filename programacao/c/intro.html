@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Introdução a Linguagem C</title>
 		<link rel="stylesheet" href="/index.css"/>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Introdução a Linguagem C"/>
@@ -17,10 +17,23 @@
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
-			<h1 style="width: 100%;">Introdução a Linguagem C</h1>
+			<h1>Introdução a Linguagem C</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="conteudo" style="width: 100%;">
+		<section id="conteudo">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<article id="introC">
 				<p>C é uma linguagem de programação compilada de propósito geral,  estruturada, imperativa, procedural, padronizada pela ISO, criada em 1972, por Dennis Ritchie, no AT&T Bell Labs, para desenvolver o sistema operacional Unix (que foi originalmente escrito em Assembly). </p>
 				<p>C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C. C tem influenciado muitas outras linguagens de programação, mais notavelmente C++, que originalmente começou como uma extensão para C.</p>
@@ -230,6 +243,29 @@ int main(void){
 					<time datetime="2014-01-07" pubdate="pubdate">Artigo publicado em 7 de Janeiro de 2014</time>
 				</footer>
 			</article>
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/programacao/assembly/">Assembly</a></li>
+					<li><a href="/programacao/c/">C</a></li>
+					<li><a href="/programacao/cpp/">C++</a></li>
+					<li><a href="/programacao/csharp/">C#</a></li>
+					<li><a href="/programacao/java/">Java</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">
