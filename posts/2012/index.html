@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Postagens de 2012</title>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Postagens de 2012"/>
@@ -24,8 +24,21 @@
 		<header>
 			<h1>Postagens de 2012</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="app" style="width: 100%;">
+		<section id="app">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<a href="/posts/2012/05/">
 				<img src="/posts/2012/05/favicon.png" alt="Maio" title="Maio"/>
 				<p>Maio de 2012</p>
@@ -51,10 +64,21 @@
 				<p>Dezembro de 2012</p>
 			</a>
 		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/posts/2012/05/">Posts em Maio</a></li>
+					<li><a href="/posts/2012/07/">Posts em Julho</a></li>
+					<li><a href="/posts/2012/09/">Posts em Setembro</a></li>
+					<li><a href="/posts/2012/10/">Posts em Outubro</a></li>
+					<li><a href="/posts/2012/11/">Posts em Novembro</a></li>
+					<li><a href="/posts/2012/12/">Posts em Dezembro</a></li>
+				</ul>
+			</nav>
+		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">
 				<ul id="MPr">
-					<h2>Menu</h2>
 					<li><a href="/">Página Inicial</a></li>
 					<li><a href="/app/">Aplicativos</a></li>
 					<li><a href="/games/">Jogos</a></li>
@@ -86,8 +110,8 @@
 							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
 						</div>
 						<footer id="footer1">
-							<p>Cleber Matheus Website - 2014</p>
-							<time datetime="2014-01-16" pubdate="pubdate">16 de Janeiro de 2014</time>
+							<p>Cleber Matheus Website - 2015</p>
+							<time datetime="2015-01-07" pubdate="pubdate">7 de Janeiro de 2015</time>
 							<button onclick="cache()">Atualizar!</button>
 						</footer>
 					</section>

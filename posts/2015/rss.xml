@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Postagens de 2015</title>
+		<link>http://clebermatheus.users.sourceforge.net/posts/2015</link>
+		<description>Posts de 2015</description>
+		<language>pt-BR</language>
+		<generator>Notepad++ v6.7.2</generator>
+		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
+		<pubDate>Wed, 07 Jan 2015 17:15:46 -0300</pubDate>
+		<image>
+			<url>favicon.png</url>
+			<title>Postagens de 2015 - Icon</title>
+			<link>http://clebermatheus.users.sourceforge.net/posts/2015/favicon.png</link>
+		</image>
+	</channel>
+</rss>

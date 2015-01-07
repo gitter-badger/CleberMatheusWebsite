@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br" manifest="/clebermatheus.appcache">
 	<head>
-		<!-- Cleber Matheus WebSite v0.9.8.2 -->
+		<!-- Cleber Matheus WebSite v0.9.8.5 -->
 		<meta charset="UTF-8"/>
 		<title>Todas as postagens</title>
-		<meta name="generator" content="Notepad++ v6.5.2"/>
+		<meta name="generator" content="Notepad++ v6.7.2"/>
 		<meta name="author" content="Cleber Matheus"/>
 		<link rel="shortcut icon" href="favicon.png"/>
 		<meta name="description" content="Todas as postagens"/>
@@ -17,14 +17,27 @@
 		<link rel="stylesheet" href="/index.css"/>
 		<link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 700px)"/>
 		<link rel="stylesheet" href="/app.css"/>
-		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website Feed RSS">
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" title="Cleber Matheus Website FeedRSS">
 	</head>
 	<body onload="cache()" contextmenu="menu1">
 		<header>
 			<h1>Todas as postagens</h1>
 			<a href="javascript:optMenu()" id="optMenu"><img id="Mimg" src="/menu@2x.png"/></a>
+			<a href="javascript:subMenu()" id="opt2Menu" onclick="SMenu()">&#9660;</a>
 		</header>
-		<section id="app" style="width: 100%;">
+		<section id="app">
+			<div id="Ads">
+				<div id="longAds">
+					<script type="text/javascript">
+						bb_bid = "1677784";
+						bb_lang = "pt-BR";
+						bb_name = "custom";
+						bb_limit = "8";
+						bb_format = "bbb";
+					</script>
+					<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
+				</div>
+			</div>
 			<a href="/posts/2012/">
 				<img src="/posts/2012/favicon.png" alt="2012" title="2012"/>
 				<p>2012</p>
@@ -37,11 +50,24 @@
 				<img src="/posts/2014/favicon.png" alt="2014" title="2014"/>
 				<p>2014</p>
 			</a>
+			<a href="/posts/2015/" style="left: 30px;">
+				<img src="/posts/2015/favicon.png" alt="2015" title="2015"/>
+				<p>2015</p>
+			</a>
+		</section>
+		<section id="subMenu" onclick="SMenu()">
+			<nav id="nav2">
+				<ul id="NPr">
+					<li><a href="/posts/2012/">Posts em 2012</a></li>
+					<li><a href="/posts/2013/">Posts em 2013</a></li>
+					<li><a href="/posts/2014/">Posts em 2014</a></li>
+					<li><a href="/posts/2015/">Posts em 2015</a></li>
+				</ul>
+			</nav>
 		</section>
 		<section id="HoverMenu" onclick="HMenu()">
 			<nav id="nav1">
 				<ul id="MPr">
-					<h2>Menu</h2>
 					<li><a href="/">Página Inicial</a></li>
 					<li><a href="/app/">Aplicativos</a></li>
 					<li><a href="/games/">Jogos</a></li>
@@ -72,8 +98,8 @@
 							<script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
 						</div>
 						<footer id="footer1">
-							<p>Cleber Matheus Website - 2014</p>
-							<time datetime="2014-01-16" pubdate="pubdate">16 de Janeiro de 2014</time>
+							<p>Cleber Matheus Website - 2015</p>
+							<time datetime="2015-01-07" pubdate="pubdate">7 de Janeiro de 2015</time>
 							<button onclick="cache()">Atualizar!</button>
 						</footer>
 					</section>
