@@ -5,13 +5,19 @@
 		<link>http://clebermatheus.users.sourceforge.net/posts/2015</link>
 		<description>Posts de 2015</description>
 		<language>pt-BR</language>
-		<generator>Notepad++ v6.7.2</generator>
+		<generator>Notepad++ v6.7.4</generator>
 		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
-		<pubDate>Wed, 07 Jan 2015 17:15:46 -0300</pubDate>
+		<pubDate>Tue, 13 Jan 2015 12:30:00 -0200</pubDate>
 		<image>
 			<url>favicon.png</url>
 			<title>Postagens de 2015 - Icon</title>
 			<link>http://clebermatheus.users.sourceforge.net/posts/2015/favicon.png</link>
 		</image>
+		<item>
+			<title>[v0.9.8.5]: Anúncios</title>
+			<link>/posts/2015/01/post-13-01-2015.html</link>
+			<description>Nesta versão os anúncios foram adicionados em todo o site, contudo pequenas alterações ocorreram como a criação da página <a href="/mods/">mods</a> e limpeza de código deixado da versão anterior.</description>
+			<pubDate>Tue, 13 Jan 2015 12:30:00 -0200</pubDate>
+		</item>
 	</channel>
 </rss>
