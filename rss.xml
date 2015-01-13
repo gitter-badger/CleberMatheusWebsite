@@ -7,12 +7,18 @@
 		<language>pt-BR</language>
 		<generator>Notepad++ v6.5.2</generator>
 		<webMaster>clebermatheus@outlook.com (Cleber Matheus)</webMaster>
-		<pubDate>Wed, 05 Mar 2014 23:34:00 -0300</pubDate>
+		<pubDate>Tue, 13 Jan 2015 12:30:00 -0200</pubDate>
 		<image>
 			<url></url>
 			<title>Cleber Matheus Website</title>
 			<link>http://clebermatheus.users.sourceforge.net/</link>
 		</image>
+		<item>
+			<title>[v0.9.8.5]: Anúncios</title>
+			<link>/posts/2015/01/post-13-01-2015.html</link>
+			<description>Nesta versão os anúncios foram adicionados em todo o site, contudo pequenas alterações ocorreram como a criação da página <a href="/mods/">mods</a> e limpeza de código deixado da versão anterior.</description>
+			<pubDate>Tue, 13 Jan 2015 12:30:00 -0200</pubDate>
+		</item>
 		<item>
 			<title>Progresso do Revox Alpha 2</title>
 			<link>/posts/2014/03/post-05-03-2014.html</link>
